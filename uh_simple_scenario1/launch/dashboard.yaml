@@ -7,9 +7,13 @@
   [[stop,trigger,base,stop],
   [init,trigger,base,init],
   [recover,trigger,base,recover],
-  [home,move,base,home],
-  [order,move,base,order],
-  [kitchen,move,base,kitchen]]
+  [home,move,base,home1],
+  [table,move,base,table4],
+  [sofa,move,base,sofa2],
+  [stair,move,base,stair4],
+  [kitchen,move,base,kitchen3],
+  [park,move,base,park2],
+  [tv,move,base,tv3]]
 1 torso:
   [[stop,trigger,torso,stop],
   [init,trigger,torso,init],
