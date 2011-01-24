@@ -1,0 +1,7 @@
+int64 a
+int64 b
+sensor_msgs/Image img_in
+---
+int64 sum
+float64 x
+float64 y

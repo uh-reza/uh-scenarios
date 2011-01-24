@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="uh_simple_scenario1" type="ImageTest" name="ImageTest" ns="rezaTest" args="image_topic:=/stereo/left/image_color" cwd="node" respawn="false" output="screen" />
+
+</launch>
