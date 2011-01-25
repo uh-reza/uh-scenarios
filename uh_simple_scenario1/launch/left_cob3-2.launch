@@ -13,10 +13,9 @@ http://www.ros.org/wiki/prosilica_camera/Tutorials.
   <node ns="stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
     <param name="ip_address" type="str" value="169.254.236.139"/>
     <param name="trigger_mode" type="str" value="streaming"/>
-	<remap from="camera/image_raw" to="image_raw"/>
-	<remap from="camera/camera_info" to="camera_info" />
-    <!--rosparam command="load" file="$(find uh_simple_scenario1)/launch/cam_settings.yaml" /-->
-    <!--rosparam command="load" file="$(find uh_simple_scenario1)/launch/cameraSensorsIni.xml" /-->
+    <remap from="camera/image_raw" to="image_raw"/>
+    <remap from="camera/camera_info" to="camera_info" />
+    <rosparam command="load" file="$(find prosilica_camera)/cam_settings.yaml" />
   </node>
 
 
