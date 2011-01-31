@@ -15,7 +15,7 @@ http://www.ros.org/wiki/prosilica_camera/Tutorials.
     <param name="trigger_mode" type="str" value="streaming"/>
     <remap from="camera/image_raw" to="image_raw"/>
     <remap from="camera/camera_info" to="camera_info" />
-    <rosparam command="load" file="$(find prosilica_camera)/cam_settings.yaml" />
+    <rosparam command="load" file="$(find uh_simple_scenario1)/launch/camera_setting.yaml" />
   </node>
 
 

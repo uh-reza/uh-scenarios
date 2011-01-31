@@ -2,7 +2,7 @@
 <launch>
 
 	<group>
-		<machine name="pc1" address="192.168.0.101" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
+		<machine name="pc1" address="192.168.0.101" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" default="true"/>
 
 		<!--include file="$(find cob_machine)/$(env ROBOT).machine" /-->
 		<param name="robot_description" command="$(find xacro)/xacro.py '$(find cob_description)/ros/robots/$(env ROBOT).urdf.xacro'" />
@@ -32,7 +32,7 @@
 	
 
 	<group>
-		<machine name="pc2" address="192.168.0.102" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
+		<machine name="pc2" address="192.168.0.102" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" default="true"/>
 		
 		<!-- start cameras -->
 		<!--nclude file="$(find cob_camera_sensors)/ros/launch/$(env ROBOT)_color_cameras.launch" /-->
