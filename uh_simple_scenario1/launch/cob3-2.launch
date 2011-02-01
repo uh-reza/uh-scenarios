@@ -39,8 +39,8 @@
 		<!--include file="$(find cob_camera_sensors)/ros/launch/$(env ROBOT)_tof.launch" /-->
 		<!--include file="$(find cob_sensor_fusion)/ros/launch/$(env ROBOT)_sensor_fusion_shared.launch" /-->
 		<!--include file="$(find cob_camera_sensors)/ros/launch/all_cameras.launch" /-->
-		<include file="$(find uh_simple_scenario1)/launch/left_cob3-2.launch" />
-		<include file="$(find uh_simple_scenario1)/launch/right_cob3-2.launch" />
+		<!--include file="$(find uh_simple_scenario1)/launch/left_cob3-2.launch" /-->
+		<!--include file="$(find uh_simple_scenario1)/launch/right_cob3-2.launch" /-->
 		<node pkg="sound_play" type="soundplay_node.py" name="soundplay" respawn="false" output="screen"/>
 		<include file="$(find cob_light)/ros/launch/light.launch" />
 		

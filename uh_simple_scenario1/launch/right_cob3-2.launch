@@ -19,7 +19,7 @@ http://www.ros.org/wiki/prosilica_camera/Tutorials.
   </node>
  
 
-  <node ns="stereo/right" pkg="image_proc" type="image_proc" respawn="false" name="prosilica_image_proc" />
+  <!--node ns="stereo/right" pkg="image_proc" type="image_proc" respawn="false" name="prosilica_image_proc" /-->
   <!--node pkg="image_view" type="image_view" respawn="false" name="prosilica_viewer_color_right">
     <param name="autosize" type="bool" value="False" />
     <param name="window_name" type="str" value="Prosilica Camera (right)" />
