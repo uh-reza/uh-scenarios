@@ -2,9 +2,9 @@
 <launch>
 
 		  <node pkg="image_view" type="image_view" respawn="false" name="viewer_color_left">
-		    <param name="autosize" type="bool" value="False" />
+		    <param name="autosize" type="bool" value="true" />
 		    <param name="window_name" type="str" value="Prosilica Camera (left)" />
-		    <remap from="image" to="left/image_raw" />
+		    <remap from="image" to="left/image_color" />
 		  </node>
 
 </launch>
