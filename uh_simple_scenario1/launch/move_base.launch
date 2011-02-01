@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <launch>
 
+	<group>
+		<machine name="pc1" address="192.168.0.101" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
+
   <!-- Run the map server -->
   <node name="map_server" pkg="map_server" type="map_server" args="$(find uh_simple_scenario1)/common/$(env ROBOT_ENV)/map.yaml"/>
 
@@ -28,5 +31,6 @@
     <remap from="odom" to="base_controller/odometry" />
     <remap from="imu_data" to="torso_lift_imu/data" />
   </node>
+	</group>
 
 </launch>
