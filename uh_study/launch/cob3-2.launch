@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+	<include file="$(find uh_study)/launch/pc1.launch" />
+	<include file="$(find uh_study)/launch/pc2.launch" />
+</launch>

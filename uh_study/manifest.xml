@@ -1,0 +1,21 @@
+<package>
+  <description brief="uh_study">
+
+     uh_study
+
+  </description>
+  <author>reza</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/uh_study</url>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="opencv2"/>
+  <depend package="cv_bridge"/>
+  <depend package="roslib"/>
+  <depend package="image_transport"/>
+
+</package>
+
+
