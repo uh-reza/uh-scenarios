@@ -1,56 +1,46 @@
 <?xml version="1.0"?>
 <launch>
 
-	<group>
-		<!--machine name="pc2" address="192.168.0.102" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/-->
-		<machine name="pc2" address="192.168.0.102" ros-root="/opt/ros/cturtle/ros" ros-package-path="/home/reza/git/uh-scenarios:/opt/ros/cturtle/stacks" user="reza" password="panasonic" default="true"/>
+ <group>
+  <machine name="pc2" address="192.168.0.102" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
+  <!--machine name="pc2" address="192.168.0.102" ros-root="/opt/ros/cturtle/ros" ros-package-path="/home/reza/git/uh-scenarios:/opt/ros/cturtle/stacks" user="reza" password="panasonic" default="true"/-->
 
-		  <!--node pkg="sound_play" type="soundplay_node.py" name="soundplay" respawn="false" output="screen"/-->
-		  <!--include file="$(find cob_light)/ros/launch/light.launch" /-->
+	  <node pkg="sound_play" type="soundplay_node.py" name="soundplay" respawn="false" output="screen"/>
+	  <include file="$(find cob_light)/ros/launch/light.launch" />
 
-		  <!-- The camera node -->
-		  <node ns="stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
-		    <param name="ip_address" type="str" value="169.254.236.139"/>
-		    <param name="trigger_mode" type="str" value="streaming"/>
-		    <remap from="camera/image_raw" to="image_raw"/>
-		    <remap from="camera/camera_info" to="camera_info" />
-		    <remap from="color_camera/parameter_descriptions" to="parameter_descriptions" />
-		    <remap from="color_camera/parameter_updates" to="parameter_updates" />
-		    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
-		  </node>
+	  <!-- The camera node -->
+	  <node ns="left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
+	    <param name="ip_address" type="str" value="169.254.236.139"/>
+	    <param name="trigger_mode" type="str" value="streaming"/>
+	    <remap from="camera/image_raw" to="image_raw"/>
+	    <remap from="camera/camera_info" to="camera_info" />
+	    <remap from="color_camera/parameter_descriptions" to="parameter_descriptions" />
+	    <remap from="color_camera/parameter_updates" to="parameter_updates" />
+	    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
+	  </node>
 
-		  <!-- The camera node -->
-		  <node ns="stereo/right" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
-		    <param name="ip_address" type="str" value="169.254.47.10"/>
-		    <param name="trigger_mode" type="str" value="streaming"/>
-		    <remap from="camera/image_raw" to="image_raw"/>
-		    <remap from="camera/camera_info" to="camera_info" />
-		    <remap from="color_camera/parameter_descriptions" to="parameter_descriptions" />
-		    <remap from="color_camera/parameter_updates" to="parameter_updates" />
-		    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
-		  </node>
+	  <!-- The camera node -->
+	  <node ns="right" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
+	    <param name="ip_address" type="str" value="169.254.47.10"/>
+	    <param name="trigger_mode" type="str" value="streaming"/>
+	    <remap from="camera/image_raw" to="image_raw"/>
+	    <remap from="camera/camera_info" to="camera_info" />
+	    <remap from="color_camera/parameter_descriptions" to="parameter_descriptions" />
+	    <remap from="color_camera/parameter_updates" to="parameter_updates" />
+	    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
+	  </node>
 
-		  <!--node ns="stereo/left" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" /-->
-		  <!--node ns="stereo/right" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" /-->
+	  <node ns="left" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
+	  <node ns="right" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
 
-		  <!--node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="">
-		    <remap from="stereo_image_proc/parameter_descriptions" to="parameter_descriptions" />
-		    <remap from="stereo_image_proc/parameter_updates" to="parameter_updates" />
-		  </node-->
-
-	</group>
-
-	<!-- 
-	<group>
-		<machine name="pc1" address="192.168.0.101" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
-
-
-		  <node pkg="image_view" type="image_view" respawn="false" name="viewer_color_left" machine="pc1">
-		    <param name="autosize" type="bool" value="true" />
-		    <param name="window_name" type="str" value="Prosilica Camera (left)" />
-		    <remap from="image" to="left/image_color" />
-		  </node>
-	</group>
+	<!--	  
+	  <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="_approximate_sync:=True">
+	    <remap from="stereo_image_proc/parameter_descriptions" to="parameter_descriptions" />
+	    <remap from="stereo_image_proc/parameter_updates" to="parameter_updates" />
+	  </node>
 	-->
+
+
+</group>
 
 </launch>
