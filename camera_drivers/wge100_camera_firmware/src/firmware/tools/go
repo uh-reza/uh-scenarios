@@ -1,3 +1,0 @@
-# python bootloader.py 10.0.5.87 ../j1.bin
-# python test.py 10.0.5.87
-python updateall.py foo
