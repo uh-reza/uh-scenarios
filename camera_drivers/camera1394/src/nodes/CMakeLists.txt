@@ -1,0 +1,2 @@
+rosbuild_add_executable(camera1394_node camera1394.cpp dev_camera1394.cpp features.cpp)
+target_link_libraries(camera1394_node dc1394)

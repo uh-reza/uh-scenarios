@@ -1,0 +1,40 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~camera_url" : \b [str] URL defining which camera to connect to, on what interface and with which IP address. min: , default: any://, max: 
+- \b "~frame_id" : \b [str] Sets the TF frame from which the camera is publishing. min: , default: , max: 
+- \b "~register_set" : \b [int] Select the register set to work with. In auto mode, an extra pulse on the trigger signal indicates that the alternate set should be used. min: 0, default: 0, max: 3
+- \b "~width" : \b [int] Number of pixels horizontally. min: 1, default: 640, max: 752
+- \b "~height" : \b [int] Number of pixels vertically. min: 1, default: 480, max: 480
+- \b "~horizontal_binning" : \b [int] Number of pixels to bin together horizontally. min: 1, default: 1, max: 4
+- \b "~vertical_binning" : \b [int] Number of pixels to bin together vertically. min: 1, default: 1, max: 4
+- \b "~horizontal_offset" : \b [int] Horizontal offset between the center of the image and the center of the imager in pixels. min: -376, default: 0, max: 376
+- \b "~vertical_offset" : \b [int] Vertical offset between the center of the image and the center of the imager in pixels. min: -240, default: 0, max: 240
+- \b "~mirror_x" : \b [bool] Mirrors the image left to right. min: False, default: False, max: True
+- \b "~mirror_y" : \b [bool] Mirrors the image top to bottom. min: False, default: False, max: True
+- \b "~rotate_180" : \b [bool] Rotates the image 180 degrees. Acts in addition to the mirorr parameters min: False, default: False, max: True
+- \b "~imager_rate" : \b [double] Sets the frame rate of the imager. In externally triggered mode this must be more than trig_rate min: 1.0, default: 30.0, max: 100.0
+- \b "~ext_trig" : \b [bool] Set camera to trigger from the external trigger input. min: False, default: False, max: True
+- \b "~rising_edge_trig" : \b [bool] Indicates that the camera should trigger on rising edges (as opposed to falling edges). min: False, default: True, max: True
+- \b "~trig_timestamp_topic" : \b [str] Sets the topic from which an externally trigged camera receives its trigger timestamps. min: , default: , max: 
+- \b "~trig_rate" : \b [double] Sets the expected triggering rate in externally triggered mode. min: 1.0, default: 30.0, max: 100.0
+- \b "~first_packet_offset" : \b [double] Offset between the end of exposure and the minimal arrival time for the first frame packet. Only used when using internal triggering. min: 0.0, default: 0.0025, max: 0.02
+- \b "~brightness" : \b [int] The camera brightness for automatic gain/exposure. min: 1, default: 58, max: 64
+- \b "~auto_black_level" : \b [bool] Enables the automatic black-level detection. min: False, default: False, max: True
+- \b "~black_level_filter_length" : \b [int] Base 2 logarithm of the number of frames the black-level algorithm should average over. min: 0, default: 4, max: 7
+- \b "~black_level_step_size" : \b [int] Maximum per-frame change in the auto black-level. min: 0, default: 2, max: 31
+- \b "~black_level" : \b [int] Sets the black level. min: -127, default: 0, max: 127
+- \b "~max_exposure" : \b [double] Maximum exposure time in seconds in automatic exposure mode. Zero for automatic. min: 0.0, default: 0.0, max: 0.1
+- \b "~auto_exposure" : \b [bool] Sets the camera exposure duration to automatic. Causes the exposure setting to be ignored. min: False, default: True, max: True
+- \b "~exposure" : \b [double] Maximum camera exposure time in seconds. The valid range depends on the video mode. min: 0.0, default: 0.01, max: 0.1
+- \b "~auto_gain" : \b [bool] Sets the analog gain to automatic. Causes the gain setting to be ignored. min: False, default: True, max: True
+- \b "~gain" : \b [int] The camera analog gain. min: 16, default: 32, max: 127
+- \b "~companding" : \b [bool] Turns on companding (a non-linear intensity scaling to improve sensitivity in dark areas). min: False, default: True, max: True
+- \b "~auto_exposure_alternate" : \b [bool] Sets the alternate camera exposure duration to automatic. Causes the exposure_alternate setting to be ignored. min: False, default: True, max: True
+- \b "~exposure_alternate" : \b [double] Alternate camera exposure in seconds. The valid range depends on the video mode. min: 0.0, default: 0.01, max: 0.1
+- \b "~auto_gain_alternate" : \b [bool] Sets the alternate analog gain to automatic. Causes the gain_alternate setting to be ignored. min: False, default: True, max: True
+- \b "~gain_alternate" : \b [int] The alternate camera analog gain. min: 16, default: 32, max: 127
+- \b "~companding_alternate" : \b [bool] Turns on companding for the alternate imager register set. min: False, default: True, max: True
+- \b "~test_pattern" : \b [bool] Turns on the camera's test pattern. min: False, default: False, max: True
+

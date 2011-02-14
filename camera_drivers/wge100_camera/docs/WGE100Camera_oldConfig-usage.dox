@@ -1,0 +1,31 @@
+\subsubsection usage Usage
+\verbatim
+<node name="wge100_camera_node" pkg="wge100_camera" type="wge100_camera_node">
+  <param name="camera_url" type="str" value="any://" />
+  <param name="video_mode" type="str" value="640x480x30" />
+  <param name="auto_exposure" type="bool" value="True" />
+  <param name="exposure" type="double" value="0.01" />
+  <param name="max_exposure" type="double" value="0.0" />
+  <param name="auto_gain" type="bool" value="True" />
+  <param name="companding" type="bool" value="True" />
+  <param name="gain" type="int" value="32" />
+  <param name="brightness" type="int" value="58" />
+  <param name="frame_id" type="str" value="" />
+  <param name="first_packet_offset" type="double" value="0.0025" />
+  <param name="ext_trig" type="bool" value="False" />
+  <param name="rising_edge_trig" type="bool" value="False" />
+  <param name="trig_controller" type="str" value="" />
+  <param name="trig_rate" type="double" value="30.0" />
+  <param name="mirror_x" type="bool" value="False" />
+  <param name="mirror_y" type="bool" value="False" />
+  <param name="rotate_180" type="bool" value="False" />
+  <param name="enable_alternate" type="bool" value="False" />
+  <param name="auto_exposure_alternate" type="bool" value="True" />
+  <param name="exposure_alternate" type="double" value="0.01" />
+  <param name="max_exposure_alternate" type="double" value="0.0" />
+  <param name="auto_gain_alternate" type="bool" value="True" />
+  <param name="gain_alternate" type="int" value="32" />
+  <param name="companding_alternate" type="bool" value="True" />
+</node>
+\endverbatim
+

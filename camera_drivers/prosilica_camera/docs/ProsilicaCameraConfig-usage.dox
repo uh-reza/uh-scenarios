@@ -1,0 +1,19 @@
+\subsubsection usage Usage
+\verbatim
+<node name="prosilica_node" pkg="prosilica_camera" type="prosilica_node">
+  <param name="trigger_mode" type="str" value="streaming" />
+  <param name="auto_exposure" type="bool" value="True" />
+  <param name="exposure" type="double" value="0.025" />
+  <param name="auto_gain" type="bool" value="True" />
+  <param name="gain" type="int" value="0" />
+  <param name="auto_whitebalance" type="bool" value="True" />
+  <param name="whitebalance_red" type="int" value="100" />
+  <param name="whitebalance_blue" type="int" value="100" />
+  <param name="frame_id" type="str" value="camera" />
+  <param name="x_offset" type="int" value="0" />
+  <param name="y_offset" type="int" value="0" />
+  <param name="width" type="int" value="0" />
+  <param name="height" type="int" value="0" />
+</node>
+\endverbatim
+

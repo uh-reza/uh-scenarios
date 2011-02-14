@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/prosilica/prosilica.h
+stdexcept
+-
+string
+-
+boost/function.hpp
+-
+boost/thread.hpp
+-
+PvApi.h
+-
+
+/tmp/buildd/ros-cturtle-camera-drivers-1.2.7/debian/ros-cturtle-camera-drivers/opt/ros/cturtle/stacks/camera_drivers/prosilica_camera/src/utilities/read_memory.cpp
+prosilica/prosilica.h
+/tmp/buildd/ros-cturtle-camera-drivers-1.2.7/debian/ros-cturtle-camera-drivers/opt/ros/cturtle/stacks/camera_drivers/prosilica_camera/src/utilities/prosilica/prosilica.h
+cstdio
+-
+cassert
+-
+
+/tmp/buildd/ros-cturtle-camera-drivers-1.2.7/debian/ros-cturtle-camera-drivers/opt/ros/cturtle/stacks/camera_drivers/prosilica_gige_sdk/include/PvApi.h
+

@@ -1,0 +1,90 @@
+#! /usr/bin/env python
+#*
+#*  Copyright (c) 2009, Willow Garage, Inc.
+#*  All rights reserved.
+#*
+#*  Redistribution and use in source and binary forms, with or without
+#*  modification, are permitted provided that the following conditions
+#*  are met:
+#*
+#*   * Redistributions of source code must retain the above copyright
+#*     notice, this list of conditions and the following disclaimer.
+#*   * Redistributions in binary form must reproduce the above
+#*     copyright notice, this list of conditions and the following
+#*     disclaimer in the documentation and/or other materials provided
+#*     with the distribution.
+#*   * Neither the name of the Willow Garage nor the names of its
+#*     contributors may be used to endorse or promote products derived
+#*     from this software without specific prior written permission.
+#*
+#*  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+#*  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+#*  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+#*  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+#*  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+#*  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+#*  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+#*  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+#*  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+#*  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+#*  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+#*  POSSIBILITY OF SUCH DAMAGE.
+#***********************************************************
+
+# Author: Blaise Gassend
+
+PACKAGE='wge100_camera'
+import roslib; roslib.load_manifest(PACKAGE)
+import rospy
+import dynamic_reconfigure
+import dynamic_reconfigure.client
+import dynamic_reconfigure.server
+from wge100_camera.cfg import WGE100Camera_oldConfig as CameraConfigType
+from wge100_camera.cfg import WGE100MultiConfigurator_oldConfig as MultiConfiguratorConfigType
+
+class WGE100MultiConfigurator:
+    def __init__(self):
+        camera_params = dynamic_reconfigure.get_parameter_names(MultiConfiguratorConfigType)
+        reconf_params = dynamic_reconfigure.get_parameter_names(CameraConfigType)
+        self.common_params = [val for val in 
+            camera_params if val in reconf_params]
+
+        self.clients = []
+        self.nodes = ""
+        self.server = dynamic_reconfigure.server.Server(MultiConfiguratorConfigType, self.reconfigure)
+
+    def reconfigure(self, config, level):
+        #print "reconfigure"
+        #print config
+        new_nodes = config['camera_nodes'].split()
+        #print new_nodes
+        if new_nodes != self.nodes:
+            #print "new_nodes", new_nodes
+            self.nodes = new_nodes
+            self.clients = [dynamic_reconfigure.client.Client(node) for node in self.nodes]
+
+        #print "created nodes"
+
+        common_dict = dict((param, config[param]) for param in self.common_params)
+
+        outputs = []
+        for client in self.clients:
+          #print "calling update_configuration"
+          outputs.append(client.update_configuration(common_dict))
+        
+        ### @todo need to look at the outputs and deal with cases where the driver tweaks things
+        if len(outputs) != 0:
+            output_dict = []
+            for output in [outputs[0]]:
+              output_dict.append(dict((param, config[param]) for param in self.common_params))
+
+            for key,val in output_dict[0].items():
+                config[key] = val
+        
+        return config
+
+if __name__ == '__main__':
+    rospy.init_node('wge100_multi_configurator')
+    handler = WGE100MultiConfigurator()
+    print "Multi-configurator started."
+    rospy.spin()
