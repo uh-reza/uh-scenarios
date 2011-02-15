@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+ <group>
+
+	<!--	  
+	  <node ns="left" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
+	  <node ns="right" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
+	-->
+
+	  <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="~approximate_sync=true ~queue_size=10">
+	    <!--remap from="stereo_image_proc/parameter_descriptions" to="parameter_descriptions" />
+	    <remap from="stereo_image_proc/parameter_updates" to="parameter_updates" /-->
+	  </node>
+
+
+</group>
+
+</launch>
