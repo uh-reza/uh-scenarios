@@ -3,7 +3,6 @@
 
  <group>
   <machine name="pc2" address="192.168.0.102" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
-  <!--machine name="pc2" address="192.168.0.102" ros-root="/opt/ros/cturtle/ros" ros-package-path="/home/reza/git/uh-scenarios:/opt/ros/cturtle/stacks" user="reza" password="panasonic" default="true"/-->
 
 	  <node pkg="sound_play" type="soundplay_node.py" name="soundplay" respawn="false" output="screen"/>
 	  <include file="$(find cob_light)/ros/launch/light.launch" />
@@ -14,8 +13,6 @@
 	    <param name="trigger_mode" type="str" value="streaming"/>
 	    <remap from="camera/image_raw" to="image_raw"/>
 	    <remap from="camera/camera_info" to="camera_info" />
-	    <remap from="color_camera/parameter_descriptions" to="parameter_descriptions" />
-	    <remap from="color_camera/parameter_updates" to="parameter_updates" />
 	    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
 	  </node>
 
@@ -25,22 +22,17 @@
 	    <param name="trigger_mode" type="str" value="streaming"/>
 	    <remap from="camera/image_raw" to="image_raw"/>
 	    <remap from="camera/camera_info" to="camera_info" />
-	    <remap from="color_camera/parameter_descriptions" to="parameter_descriptions" />
-	    <remap from="color_camera/parameter_updates" to="parameter_updates" />
 	    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
 	  </node>
 
 	<!--	  
 	  <node ns="stereo/left" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
 	  <node ns="stereo/right" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
-
 	-->
 
 	  <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="_approximate_sync:=True">
-	    <remap from="stereo_image_proc/parameter_descriptions" to="parameter_descriptions" />
-	    <remap from="stereo_image_proc/parameter_updates" to="parameter_updates" />
+	    <rosparam command="load" file="$(find uh_study)/common/stereo.yaml" />
 	  </node>
-
 
 </group>
 

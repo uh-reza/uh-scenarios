@@ -1,0 +1,15 @@
+(cl:defpackage uh_study-srv
+  (:use )
+  (:export
+   "FACEPOSE"
+   "<FACEPOSE-REQUEST>"
+   "FACEPOSE-REQUEST"
+   "<FACEPOSE-RESPONSE>"
+   "FACEPOSE-RESPONSE"
+   "ADDTWOINTS"
+   "<ADDTWOINTS-REQUEST>"
+   "ADDTWOINTS-REQUEST"
+   "<ADDTWOINTS-RESPONSE>"
+   "ADDTWOINTS-RESPONSE"
+  ))
+
