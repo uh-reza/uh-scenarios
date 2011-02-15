@@ -9,36 +9,37 @@
 	  <include file="$(find cob_light)/ros/launch/light.launch" />
 
 	  <!-- The camera node -->
-	  <node ns="left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
+	  <node ns="stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
 	    <param name="ip_address" type="str" value="169.254.236.139"/>
 	    <param name="trigger_mode" type="str" value="streaming"/>
-	    <!--remap from="camera/image_raw" to="image_raw"/>
+	    <remap from="camera/image_raw" to="image_raw"/>
 	    <remap from="camera/camera_info" to="camera_info" />
 	    <remap from="color_camera/parameter_descriptions" to="parameter_descriptions" />
-	    <remap from="color_camera/parameter_updates" to="parameter_updates" /-->
+	    <remap from="color_camera/parameter_updates" to="parameter_updates" />
 	    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
 	  </node>
 
 	  <!-- The camera node -->
-	  <node ns="right" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
+	  <node ns="stereo/right" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
 	    <param name="ip_address" type="str" value="169.254.47.10"/>
 	    <param name="trigger_mode" type="str" value="streaming"/>
-	    <!--remap from="camera/image_raw" to="image_raw"/>
+	    <remap from="camera/image_raw" to="image_raw"/>
 	    <remap from="camera/camera_info" to="camera_info" />
 	    <remap from="color_camera/parameter_descriptions" to="parameter_descriptions" />
-	    <remap from="color_camera/parameter_updates" to="parameter_updates" /-->
+	    <remap from="color_camera/parameter_updates" to="parameter_updates" />
 	    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
 	  </node>
 
 	<!--	  
-	  <node ns="left" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
-	  <node ns="right" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
+	  <node ns="stereo/left" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
+	  <node ns="stereo/right" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
+
+	-->
 
 	  <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="_approximate_sync:=True">
 	    <remap from="stereo_image_proc/parameter_descriptions" to="parameter_descriptions" />
 	    <remap from="stereo_image_proc/parameter_updates" to="parameter_updates" />
 	  </node>
-	-->
 
 
 </group>
