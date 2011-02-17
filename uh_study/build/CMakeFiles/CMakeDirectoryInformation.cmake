@@ -11,9 +11,9 @@ SET(CMAKE_FORCE_UNIX_PATHS 1)
 # The C and CXX include file search paths:
 SET(CMAKE_C_INCLUDE_PATH
   "../include"
-  "/opt/ros/diamondback/stacks/vision_opencv/cv_bridge/include"
-  "/opt/ros/diamondback/stacks/vision_opencv/opencv2/opencv/include"
-  "/opt/ros/diamondback/stacks/vision_opencv/opencv2/opencv/include/opencv"
+  "/home/reza/ros/vision_opencv/cv_bridge/include"
+  "/home/reza/ros/vision_opencv/opencv2/opencv/include"
+  "/home/reza/ros/vision_opencv/opencv2/opencv/include/opencv"
   "/opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/include"
   "/opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/cpp/include"
   "/opt/ros/diamondback/ros/core/roslib/msg_gen/cpp/include"
