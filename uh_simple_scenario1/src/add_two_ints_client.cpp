@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include "uh_simple_scenario1/AddTwoInts.h"
+#include "uh_study/AddTwoInts.h"
 #include <cstdlib>
 
 int main(int argc, char **argv)

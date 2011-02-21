@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include "uh_simple_scenario1/AddTwoInts.h"
+#include "uh_study/AddTwoInts.h"
 
 bool add(uh_simple_scenario1::AddTwoInts::Request  &req,
          uh_simple_scenario1::AddTwoInts::Response &res )

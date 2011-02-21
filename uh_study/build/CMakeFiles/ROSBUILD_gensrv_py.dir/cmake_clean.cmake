@@ -7,8 +7,8 @@ FILE(REMOVE_RECURSE
   "../srv_gen"
   "CMakeFiles/ROSBUILD_gensrv_py"
   "../src/uh_study/srv/__init__.py"
-  "../src/uh_study/srv/_FacePose.py"
   "../src/uh_study/srv/_AddTwoInts.py"
+  "../src/uh_study/srv/_FacePoseSrv.py"
 )
 
 # Per-language clean rules from dependency scanning.

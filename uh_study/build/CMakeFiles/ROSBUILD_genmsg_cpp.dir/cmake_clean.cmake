@@ -6,7 +6,6 @@ FILE(REMOVE_RECURSE
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/ROSBUILD_genmsg_cpp"
-  "../msg_gen/cpp/include/uh_study/FacePose.h"
   "../msg_gen/cpp/include/uh_study/Num.h"
 )
 

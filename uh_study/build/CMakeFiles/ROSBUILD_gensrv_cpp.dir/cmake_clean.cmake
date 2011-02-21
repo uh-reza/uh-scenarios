@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/ROSBUILD_gensrv_cpp"
-  "../srv_gen/cpp/include/uh_study/FacePose.h"
   "../srv_gen/cpp/include/uh_study/AddTwoInts.h"
+  "../srv_gen/cpp/include/uh_study/FacePoseSrv.h"
 )
 
 # Per-language clean rules from dependency scanning.

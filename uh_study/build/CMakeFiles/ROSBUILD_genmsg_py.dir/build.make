@@ -41,59 +41,10 @@ CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/uh_study/build
 
 CMakeFiles/ROSBUILD_genmsg_py: ../src/uh_study/msg/__init__.py
 
-../src/uh_study/msg/__init__.py: ../src/uh_study/msg/_FacePose.py
 ../src/uh_study/msg/__init__.py: ../src/uh_study/msg/_Num.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/uh_study/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/uh_study/msg/__init__.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --initpy /home/reza/git/uh-scenarios/uh_study/msg/FacePose.msg /home/reza/git/uh-scenarios/uh_study/msg/Num.msg
-
-../src/uh_study/msg/_FacePose.py: ../msg/FacePose.msg
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/ros/core/roslib/scripts/gendeps
-../src/uh_study/msg/_FacePose.py: ../manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/ros/tools/rospack/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/ros/core/roslib/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/ros/core/roslang/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/utilities/rostime/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../src/uh_study/msg/_FacePose.py: /home/reza/ros/vision_opencv/opencv2/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/ros/tools/rosclean/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/rosgraph/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/rosmaster/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/rosout/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/roslaunch/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/ros/tools/rosunit/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/rostest/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/rosbag/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/manifest.xml
-../src/uh_study/msg/_FacePose.py: /home/reza/ros/vision_opencv/cv_bridge/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/utilities/message_filters/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../src/uh_study/msg/_FacePose.py: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/uh_study/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/uh_study/msg/_FacePose.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/uh_study/msg/FacePose.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --initpy /home/reza/git/uh-scenarios/uh_study/msg/Num.msg
 
 ../src/uh_study/msg/_Num.py: ../msg/Num.msg
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
@@ -139,13 +90,12 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/uh_study/msg/__init__.py
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg_gen/generated
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/msg_gen/generated
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/uh_study/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/uh_study/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/uh_study/msg/_Num.py"
 	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/uh_study/msg/Num.msg
 
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py
 ROSBUILD_genmsg_py: ../src/uh_study/msg/__init__.py
-ROSBUILD_genmsg_py: ../src/uh_study/msg/_FacePose.py
 ROSBUILD_genmsg_py: ../src/uh_study/msg/_Num.py
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py.dir/build.make
 .PHONY : ROSBUILD_genmsg_py

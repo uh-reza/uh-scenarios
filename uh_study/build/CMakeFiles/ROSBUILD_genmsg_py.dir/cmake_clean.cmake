@@ -7,7 +7,6 @@ FILE(REMOVE_RECURSE
   "../srv_gen"
   "CMakeFiles/ROSBUILD_genmsg_py"
   "../src/uh_study/msg/__init__.py"
-  "../src/uh_study/msg/_FacePose.py"
   "../src/uh_study/msg/_Num.py"
 )
 

@@ -6,12 +6,12 @@ FILE(REMOVE_RECURSE
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/ROSBUILD_gensrv_lisp"
-  "../srv_gen/lisp/FacePose.lisp"
-  "../srv_gen/lisp/_package.lisp"
-  "../srv_gen/lisp/_package_FacePose.lisp"
   "../srv_gen/lisp/AddTwoInts.lisp"
   "../srv_gen/lisp/_package.lisp"
   "../srv_gen/lisp/_package_AddTwoInts.lisp"
+  "../srv_gen/lisp/FacePoseSrv.lisp"
+  "../srv_gen/lisp/_package.lisp"
+  "../srv_gen/lisp/_package_FacePoseSrv.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

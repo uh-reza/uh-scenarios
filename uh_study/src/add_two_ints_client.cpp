@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include "uh_simple_scenario1/AddTwoInts.h"
+#include "uh_study/AddTwoInts.h"
 #include <cstdlib>
 
 int main(int argc, char **argv)
@@ -12,8 +12,8 @@ int main(int argc, char **argv)
   }
 
   ros::NodeHandle n;
-  ros::ServiceClient client = n.serviceClient<uh_simple_scenario1::AddTwoInts>("add_two_ints");
-  uh_simple_scenario1::AddTwoInts srv;
+  ros::ServiceClient client = n.serviceClient<uh_study::AddTwoInts>("add_two_ints");
+  uh_study::AddTwoInts srv;
   srv.request.a = atoll(argv[1]);
   srv.request.b = atoll(argv[2]);
   if (client.call(srv))

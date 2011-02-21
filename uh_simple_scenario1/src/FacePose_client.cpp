@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include "uh_simple_scenario1/FacePose.h"
+#include "uh_study/FacePose.h"
 #include <cstdlib>
 
 int main(int argc, char **argv)

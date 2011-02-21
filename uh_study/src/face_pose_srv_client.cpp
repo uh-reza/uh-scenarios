@@ -1,19 +1,19 @@
 #include "ros/ros.h"
-#include "uh_simple_scenario1/FacePose.h"
+#include "uh_study/FacePoseSrv.h"
 #include <cstdlib>
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "FacePose_client");
+  ros::init(argc, argv, "face_pose_srv_client");
   if (argc != 3)
   {
-    ROS_INFO("usage: FacePose_client X Y");
+    ROS_INFO("usage: face_pose_srv_client X Y");
     return 1;
   }
 
   ros::NodeHandle n;
-  ros::ServiceClient client = n.serviceClient<uh_simple_scenario1::FacePose>("FacePose");
-  uh_simple_scenario1::FacePose srv;
+  ros::ServiceClient client = n.serviceClient<uh_study::FacePoseSrv>("face_pose_srv");
+  uh_study::FacePoseSrv srv;
   srv.request.a = atoll(argv[1]);
   srv.request.b = atoll(argv[2]);
   if (client.call(srv))
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
   }
   else
   {
-    ROS_ERROR("Failed to call service FacePose");
+    ROS_ERROR("Failed to call service face_pose_srv");
     return 1;
   }
 
