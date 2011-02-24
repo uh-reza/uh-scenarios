@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+ <node pkg="image_view" type="stereo_view" respawn="false" name="stereo_viewer" args="stereo:=stereo image:=image_rect _approximate_sync:=True _queue_size:=15"/>
+
+</launch>
