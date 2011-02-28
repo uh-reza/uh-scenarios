@@ -1,6 +1,6 @@
 <launch>
 
-  <node pkg="rosbag" type="play" name="rosplay" args="-r 0.5 -l /home/reza/bag_files/face_detector_withface_test_diamondback.bag">
+  <node pkg="rosbag" type="play" name="rosplay" args="-r 0.1 -l /home/reza/bag_files/face_detector_withface_test_diamondback.bag">
 	    <remap from="wide_stereo/left/image_raw" to="stereo/left/image_raw"/>
 	    <remap from="wide_stereo/left/camera_info" to="stereo/left/camera_info"/>
 	    <remap from="wide_stereo/right/image_raw" to="stereo/right/image_raw"/>
