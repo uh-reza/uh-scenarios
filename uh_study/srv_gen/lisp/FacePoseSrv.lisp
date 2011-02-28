@@ -32,14 +32,17 @@
   (cl:unless (cl:typep m 'FacePoseSrv-request)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name uh_study-srv:<FacePoseSrv-request> is deprecated: use uh_study-srv:FacePoseSrv-request instead.")))
 
+(cl:ensure-generic-function 'a-val :lambda-list '(m))
 (cl:defmethod a-val ((m <FacePoseSrv-request>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:a-val is deprecated.  Use uh_study-srv:a instead.")
   (a m))
 
+(cl:ensure-generic-function 'b-val :lambda-list '(m))
 (cl:defmethod b-val ((m <FacePoseSrv-request>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:b-val is deprecated.  Use uh_study-srv:b instead.")
   (b m))
 
+(cl:ensure-generic-function 'img_in-val :lambda-list '(m))
 (cl:defmethod img_in-val ((m <FacePoseSrv-request>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:img_in-val is deprecated.  Use uh_study-srv:img_in instead.")
   (img_in m))
@@ -156,18 +159,22 @@
   (cl:unless (cl:typep m 'FacePoseSrv-response)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name uh_study-srv:<FacePoseSrv-response> is deprecated: use uh_study-srv:FacePoseSrv-response instead.")))
 
+(cl:ensure-generic-function 'sum-val :lambda-list '(m))
 (cl:defmethod sum-val ((m <FacePoseSrv-response>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:sum-val is deprecated.  Use uh_study-srv:sum instead.")
   (sum m))
 
+(cl:ensure-generic-function 'x-val :lambda-list '(m))
 (cl:defmethod x-val ((m <FacePoseSrv-response>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:x-val is deprecated.  Use uh_study-srv:x instead.")
   (x m))
 
+(cl:ensure-generic-function 'y-val :lambda-list '(m))
 (cl:defmethod y-val ((m <FacePoseSrv-response>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:y-val is deprecated.  Use uh_study-srv:y instead.")
   (y m))
 
+(cl:ensure-generic-function 'z-val :lambda-list '(m))
 (cl:defmethod z-val ((m <FacePoseSrv-response>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:z-val is deprecated.  Use uh_study-srv:z instead.")
   (z m))

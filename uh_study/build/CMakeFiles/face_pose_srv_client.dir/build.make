@@ -81,6 +81,16 @@ CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamond
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/utilities/message_filters/manifest.xml
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/geometry/bullet/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/geometry/angles/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosnode/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosmsg/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/tools/rostopic/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosservice/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/utilities/roswtf/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/geometry/tf/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/geometry/eigen/manifest.xml
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/laser_pipeline/laser_geometry/manifest.xml
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/generated
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
@@ -89,17 +99,19 @@ CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamond
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg_gen/generated
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/msg_gen/generated
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/srv_gen/generated
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/uh_study/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o -c /home/reza/git/uh-scenarios/uh_study/src/face_pose_srv_client.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DEIGEN_USE_NEW_STDVECTOR -DEIGEN2_SUPPORT -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o -c /home/reza/git/uh-scenarios/uh_study/src/face_pose_srv_client.cpp
 
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/reza/git/uh-scenarios/uh_study/src/face_pose_srv_client.cpp > CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DEIGEN_USE_NEW_STDVECTOR -DEIGEN2_SUPPORT -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/reza/git/uh-scenarios/uh_study/src/face_pose_srv_client.cpp > CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.i
 
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/reza/git/uh-scenarios/uh_study/src/face_pose_srv_client.cpp -o CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DEIGEN_USE_NEW_STDVECTOR -DEIGEN2_SUPPORT -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/reza/git/uh-scenarios/uh_study/src/face_pose_srv_client.cpp -o CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.s
 
 CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o.requires:
 .PHONY : CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o.requires

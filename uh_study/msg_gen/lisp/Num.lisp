@@ -22,6 +22,7 @@
   (cl:unless (cl:typep m 'Num)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name uh_study-msg:<Num> is deprecated: use uh_study-msg:Num instead.")))
 
+(cl:ensure-generic-function 'num-val :lambda-list '(m))
 (cl:defmethod num-val ((m <Num>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-msg:num-val is deprecated.  Use uh_study-msg:num instead.")
   (num m))

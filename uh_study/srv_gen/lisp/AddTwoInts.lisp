@@ -27,10 +27,12 @@
   (cl:unless (cl:typep m 'AddTwoInts-request)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name uh_study-srv:<AddTwoInts-request> is deprecated: use uh_study-srv:AddTwoInts-request instead.")))
 
+(cl:ensure-generic-function 'a-val :lambda-list '(m))
 (cl:defmethod a-val ((m <AddTwoInts-request>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:a-val is deprecated.  Use uh_study-srv:a instead.")
   (a m))
 
+(cl:ensure-generic-function 'b-val :lambda-list '(m))
 (cl:defmethod b-val ((m <AddTwoInts-request>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:b-val is deprecated.  Use uh_study-srv:b instead.")
   (b m))
@@ -128,6 +130,7 @@
   (cl:unless (cl:typep m 'AddTwoInts-response)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name uh_study-srv:<AddTwoInts-response> is deprecated: use uh_study-srv:AddTwoInts-response instead.")))
 
+(cl:ensure-generic-function 'sum-val :lambda-list '(m))
 (cl:defmethod sum-val ((m <AddTwoInts-response>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader uh_study-srv:sum-val is deprecated.  Use uh_study-srv:sum instead.")
   (sum m))

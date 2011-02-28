@@ -39,6 +39,9 @@ rosbuild_add_executable(add_two_ints_client src/add_two_ints_client.cpp)
 rosbuild_add_executable(face_pose_srv_server src/face_pose_srv_server.cpp)
 rosbuild_add_executable(face_pose_srv_client src/face_pose_srv_client.cpp)
 
+#rosbuild_add_executable(LaserScanToPointCloud src/LaserScanToPointCloud.cpp)
+rosbuild_add_executable(LaserScanToPointCloud src/LaserScanToPointCloud.cpp src/LegsDetector.cpp  src/LegsDetector.h  src/LegsDetectorUtility.h )
+
 #rosbuild_add_executable(FacePose_server src/FacePose_server.cpp)
 #rosbuild_add_executable(FacePose_client src/FacePose_client.cpp)
 

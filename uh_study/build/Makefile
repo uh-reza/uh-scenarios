@@ -96,6 +96,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named LaserScanToPointCloud
+
+# Build rule for target.
+LaserScanToPointCloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LaserScanToPointCloud
+.PHONY : LaserScanToPointCloud
+
+# fast build rule for target.
+LaserScanToPointCloud/fast:
+	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/build
+.PHONY : LaserScanToPointCloud/fast
+
+#=============================================================================
 # Target rules for targets named ROSBUILD_genmsg_cpp
 
 # Build rule for target.
@@ -421,6 +434,36 @@ tests/fast:
 .PHONY : tests/fast
 
 # target to build an object file
+src/LaserScanToPointCloud.o:
+	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LaserScanToPointCloud.o
+.PHONY : src/LaserScanToPointCloud.o
+
+# target to preprocess a source file
+src/LaserScanToPointCloud.i:
+	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LaserScanToPointCloud.i
+.PHONY : src/LaserScanToPointCloud.i
+
+# target to generate assembly for a file
+src/LaserScanToPointCloud.s:
+	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LaserScanToPointCloud.s
+.PHONY : src/LaserScanToPointCloud.s
+
+# target to build an object file
+src/LegsDetector.o:
+	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.o
+.PHONY : src/LegsDetector.o
+
+# target to preprocess a source file
+src/LegsDetector.i:
+	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.i
+.PHONY : src/LegsDetector.i
+
+# target to generate assembly for a file
+src/LegsDetector.s:
+	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.s
+.PHONY : src/LegsDetector.s
+
+# target to build an object file
 src/add_two_ints_client.o:
 	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.o
 .PHONY : src/add_two_ints_client.o
@@ -516,6 +559,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... LaserScanToPointCloud"
 	@echo "... ROSBUILD_genmsg_cpp"
 	@echo "... ROSBUILD_genmsg_lisp"
 	@echo "... ROSBUILD_genmsg_py"
@@ -543,6 +587,12 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... src/LaserScanToPointCloud.o"
+	@echo "... src/LaserScanToPointCloud.i"
+	@echo "... src/LaserScanToPointCloud.s"
+	@echo "... src/LegsDetector.o"
+	@echo "... src/LegsDetector.i"
+	@echo "... src/LegsDetector.s"
 	@echo "... src/add_two_ints_client.o"
 	@echo "... src/add_two_ints_client.i"
 	@echo "... src/add_two_ints_client.s"
