@@ -63,7 +63,7 @@ CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamond
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /home/reza/ros/vision_opencv/opencv2/manifest.xml
+CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/vision_opencv/opencv2/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/ros/tools/rosclean/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosgraph/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosmaster/manifest.xml
@@ -76,7 +76,7 @@ CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamond
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosbagmigration/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/manifest.xml
-CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /home/reza/ros/vision_opencv/cv_bridge/manifest.xml
+CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/vision_opencv/cv_bridge/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o: /opt/ros/diamondback/stacks/ros_comm/utilities/message_filters/manifest.xml

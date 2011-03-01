@@ -109,6 +109,19 @@ LaserScanToPointCloud/fast:
 .PHONY : LaserScanToPointCloud/fast
 
 #=============================================================================
+# Target rules for targets named LegDetection
+
+# Build rule for target.
+LegDetection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LegDetection
+.PHONY : LegDetection
+
+# fast build rule for target.
+LegDetection/fast:
+	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/build
+.PHONY : LegDetection/fast
+
+#=============================================================================
 # Target rules for targets named ROSBUILD_genmsg_cpp
 
 # Build rule for target.
@@ -449,18 +462,36 @@ src/LaserScanToPointCloud.s:
 .PHONY : src/LaserScanToPointCloud.s
 
 # target to build an object file
+src/LegDetection.o:
+	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegDetection.o
+.PHONY : src/LegDetection.o
+
+# target to preprocess a source file
+src/LegDetection.i:
+	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegDetection.i
+.PHONY : src/LegDetection.i
+
+# target to generate assembly for a file
+src/LegDetection.s:
+	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegDetection.s
+.PHONY : src/LegDetection.s
+
+# target to build an object file
 src/LegsDetector.o:
 	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.o
+	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegsDetector.o
 .PHONY : src/LegsDetector.o
 
 # target to preprocess a source file
 src/LegsDetector.i:
 	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.i
+	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegsDetector.i
 .PHONY : src/LegsDetector.i
 
 # target to generate assembly for a file
 src/LegsDetector.s:
 	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.s
+	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegsDetector.s
 .PHONY : src/LegsDetector.s
 
 # target to build an object file
@@ -560,6 +591,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... LaserScanToPointCloud"
+	@echo "... LegDetection"
 	@echo "... ROSBUILD_genmsg_cpp"
 	@echo "... ROSBUILD_genmsg_lisp"
 	@echo "... ROSBUILD_genmsg_py"
@@ -590,6 +622,9 @@ help:
 	@echo "... src/LaserScanToPointCloud.o"
 	@echo "... src/LaserScanToPointCloud.i"
 	@echo "... src/LaserScanToPointCloud.s"
+	@echo "... src/LegDetection.o"
+	@echo "... src/LegDetection.i"
+	@echo "... src/LegDetection.s"
 	@echo "... src/LegsDetector.o"
 	@echo "... src/LegsDetector.i"
 	@echo "... src/LegsDetector.s"

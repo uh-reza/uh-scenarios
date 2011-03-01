@@ -61,7 +61,7 @@ CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/uh_study/FacePoseSrv.h
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/uh_study/AddTwoInts.h: /home/reza/ros/vision_opencv/opencv2/manifest.xml
+../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/vision_opencv/opencv2/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/ros/tools/rosclean/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/ros_comm/tools/rosgraph/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/ros_comm/tools/rosmaster/manifest.xml
@@ -74,7 +74,7 @@ CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/uh_study/FacePoseSrv.h
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/ros_comm/tools/rosbagmigration/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/uh_study/AddTwoInts.h: /home/reza/ros/vision_opencv/cv_bridge/manifest.xml
+../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/vision_opencv/cv_bridge/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../srv_gen/cpp/include/uh_study/AddTwoInts.h: /opt/ros/diamondback/stacks/ros_comm/utilities/message_filters/manifest.xml
@@ -124,7 +124,7 @@ CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/uh_study/FacePoseSrv.h
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /home/reza/ros/vision_opencv/opencv2/manifest.xml
+../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/vision_opencv/opencv2/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/ros/tools/rosclean/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/ros_comm/tools/rosgraph/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/ros_comm/tools/rosmaster/manifest.xml
@@ -137,7 +137,7 @@ CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/uh_study/FacePoseSrv.h
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/ros_comm/tools/rosbagmigration/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /home/reza/ros/vision_opencv/cv_bridge/manifest.xml
+../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/vision_opencv/cv_bridge/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../srv_gen/cpp/include/uh_study/FacePoseSrv.h: /opt/ros/diamondback/stacks/ros_comm/utilities/message_filters/manifest.xml

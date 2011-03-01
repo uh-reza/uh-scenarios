@@ -25,8 +25,7 @@ public:
     laser_sub_(n_, "base_scan", 10),
     laser_notifier_(laser_sub_,listener_, "base_link", 10)
   {
-    laser_notifier_.registerCallback(
-      boost::bind(&LaserScanToPointCloud::scanCallback, this, _1));
+    laser_notifier_.registerCallback(boost::bind(&LaserScanToPointCloud::scanCallback, this, _1));
     laser_notifier_.setTolerance(ros::Duration(0.01));
     scan_pub_ = n_.advertise<sensor_msgs::PointCloud>("/my_cloud",1);
 
@@ -37,6 +36,7 @@ public:
 
   void scanCallback (const sensor_msgs::LaserScan::ConstPtr& scan_in)
   {
+
     sensor_msgs::PointCloud cloud;
     try
     {
@@ -54,11 +54,12 @@ public:
 	vector< laser_t > laserVector;
 
 	laserVector.clear();
+	printf("\n %lf %lf", RTOD(scan_in->angle_min), RTOD(scan_in->angle_max) );
 	for (int i = 0; i < 512; i++ )
 	{
 		ta.angle = (scan_in->angle_increment * i) + scan_in->angle_min;
 		if ( (ta.angle < scan_in->angle_min) || (ta.angle > scan_in->angle_max) ) continue;
-		ta.range = scan_in->ranges[i+85];
+		ta.range = scan_in->ranges[i];
 		if ( (ta.range < scan_in->range_min) || (ta.range > scan_in->range_max) ) ta.range = scan_in->range_max;
 		ta.x = 0; ta.y = 0;	ta.intensity = 4;
 		laserVector.push_back(ta);

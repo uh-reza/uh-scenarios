@@ -63,7 +63,7 @@ CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/cli
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-CMakeFiles/listener.dir/src/listener.o: /home/reza/ros/vision_opencv/opencv2/manifest.xml
+CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/vision_opencv/opencv2/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/ros/tools/rosclean/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosgraph/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosmaster/manifest.xml
@@ -76,7 +76,7 @@ CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/too
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosbagmigration/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/manifest.xml
-CMakeFiles/listener.dir/src/listener.o: /home/reza/ros/vision_opencv/cv_bridge/manifest.xml
+CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/vision_opencv/cv_bridge/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 CMakeFiles/listener.dir/src/listener.o: /opt/ros/diamondback/stacks/ros_comm/utilities/message_filters/manifest.xml

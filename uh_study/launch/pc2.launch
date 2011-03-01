@@ -25,8 +25,8 @@
 	    <rosparam command="load" file="$(find uh_study)/common/camera_setting.yaml" />
 	  </node>
 
-	<!--	  
 	  <include file="$(find uh_study)/launch/face_detector.launch" />
+	<!--	  
 	  <node ns="stereo/left" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
 	  <node ns="stereo/right" pkg="image_proc" type="image_proc" respawn="false" name="image_proc" />
 	  <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="_approximate_sync:=True"/>

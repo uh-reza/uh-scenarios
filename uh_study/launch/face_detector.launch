@@ -1,8 +1,8 @@
 <launch>
  
-  <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="_approximate_sync:=True"/>
+  <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="_approximate_sync:=True _queue_size:=15"/>
 
-  <node pkg="face_detector" type="face_detector" name="face_detector" args="stereo:=/stereo image:=image_rect_color" output="screen">
+  <node pkg="face_detector" type="face_detector" name="face_detector" args="stereo:=/stereo image:=image_rect _approximate_sync:=True _queue_size:=15" output="screen">
   	 <param name="classifier_name" type="string" value="frontalface" />
 	 <param name="classifier_filename" type="string" value="$(find opencv2)/opencv/share/opencv/haarcascades/haarcascade_frontalface_alt.xml" />
 	 <param name="classifier_reliability" type="double" value="0.9"/>

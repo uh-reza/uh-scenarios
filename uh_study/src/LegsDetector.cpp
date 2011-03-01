@@ -389,8 +389,9 @@ void LegsDetector::update(const std::vector< laser_t >& laserBuffer)
       cvFlip(_tmpImg, NULL, -1);
       cvResize(_tmpImg, _debugImage, CV_INTER_NN);
       cvShowImage("Legs detector", _debugImage);
- 	  if (_delay)
-        cvWaitKey(_delay);  // handles event processing of HIGHGUI library
+	cvWaitKey(20);
+ 	  //if (_delay)
+        //cvWaitKey(_delay);  // handles event processing of HIGHGUI library
    }
    return;
 }

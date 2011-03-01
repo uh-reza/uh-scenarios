@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-	<include file="$(find uh_simple_scenario1)/launch/pc1.launch" />
-	<include file="$(find uh_simple_scenario1)/launch/pc2.launch" />
-</launch>

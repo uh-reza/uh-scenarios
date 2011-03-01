@@ -1,3 +1,0 @@
-{auto_exposure: true, auto_gain: true, auto_whitebalance: true, exposure: 0.025000000000000001,
-  frame_id: camera, gain: 0, height: 480, trigger_mode: streaming, whitebalance_blue: 100,
-  whitebalance_red: 100, width: 640, x_offset: 300, y_offset: 300}

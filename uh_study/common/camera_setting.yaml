@@ -1,4 +1,4 @@
 {auto_exposure: true, auto_gain: true, auto_whitebalance: true, binning_x: 1, binning_y: 1,
   exposure: 2.5e-05, frame_id: camera, gain: 0, height: 480, trig_rate: 15.0, trig_timestamp_topic: '',
   trigger_mode: streaming, whitebalance_blue: 100, whitebalance_red: 100, width: 640,
-  x_offset: 300, y_offset: 300}
+  x_offset: 500, y_offset: 500}
