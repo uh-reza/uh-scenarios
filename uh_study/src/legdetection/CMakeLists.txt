@@ -1,0 +1,3 @@
+add_subdirectory(LegsDetector)
+rosbuild_add_executable(legsDetector_node legsDetector_node.cpp)
+target_link_libraries(legsDetector_node LegsDetector)

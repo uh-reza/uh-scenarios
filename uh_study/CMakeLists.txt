@@ -30,21 +30,12 @@ rosbuild_gensrv()
 #target_link_libraries(example ${PROJECT_NAME})
 
 
-rosbuild_add_executable(talker src/talker.cpp)
-rosbuild_add_executable(listener src/listener.cpp)
+#rosbuild_add_executable(talker src/talker.cpp)
+#rosbuild_add_executable(listener src/listener.cpp)
 
-rosbuild_add_executable(add_two_ints_server src/add_two_ints_server.cpp)
-rosbuild_add_executable(add_two_ints_client src/add_two_ints_client.cpp)
+#rosbuild_add_executable(add_two_ints_server src/add_two_ints_server.cpp)
+#rosbuild_add_executable(add_two_ints_client src/add_two_ints_client.cpp)
 
-rosbuild_add_executable(face_pose_srv_server src/face_pose_srv_server.cpp)
-rosbuild_add_executable(face_pose_srv_client src/face_pose_srv_client.cpp)
+add_subdirectory(src)
 
-#rosbuild_add_executable(LaserScanToPointCloud src/LaserScanToPointCloud.cpp)
-rosbuild_add_executable(LaserScanToPointCloud src/LaserScanToPointCloud.cpp src/LegsDetector.cpp  src/LegsDetector.h  src/LegsDetectorUtility.h )
-rosbuild_add_executable(LegDetection src/LegDetection.cpp src/LegsDetector.cpp  src/LegsDetector.h  src/LegsDetectorUtility.h )
-
-#rosbuild_add_executable(FacePose_server src/FacePose_server.cpp)
-#rosbuild_add_executable(FacePose_client src/FacePose_client.cpp)
-
-#rosbuild_add_executable(ImageTest src/ImageTest.cpp)
 

@@ -1,0 +1,1 @@
+rosbuild_add_library(LegsDetector LegsDetector.cpp LegsDetector.h LegsDetectorUtility.h)

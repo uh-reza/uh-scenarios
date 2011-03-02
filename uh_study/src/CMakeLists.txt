@@ -1,0 +1,2 @@
+add_subdirectory(legdetection)
+add_subdirectory(laserscan)

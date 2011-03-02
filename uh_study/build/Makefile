@@ -96,32 +96,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LaserScanToPointCloud
-
-# Build rule for target.
-LaserScanToPointCloud: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LaserScanToPointCloud
-.PHONY : LaserScanToPointCloud
-
-# fast build rule for target.
-LaserScanToPointCloud/fast:
-	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/build
-.PHONY : LaserScanToPointCloud/fast
-
-#=============================================================================
-# Target rules for targets named LegDetection
-
-# Build rule for target.
-LegDetection: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LegDetection
-.PHONY : LegDetection
-
-# fast build rule for target.
-LegDetection/fast:
-	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/build
-.PHONY : LegDetection/fast
-
-#=============================================================================
 # Target rules for targets named ROSBUILD_genmsg_cpp
 
 # Build rule for target.
@@ -200,32 +174,6 @@ ROSBUILD_gensrv_py/fast:
 .PHONY : ROSBUILD_gensrv_py/fast
 
 #=============================================================================
-# Target rules for targets named add_two_ints_client
-
-# Build rule for target.
-add_two_ints_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client
-.PHONY : add_two_ints_client
-
-# fast build rule for target.
-add_two_ints_client/fast:
-	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/build
-.PHONY : add_two_ints_client/fast
-
-#=============================================================================
-# Target rules for targets named add_two_ints_server
-
-# Build rule for target.
-add_two_ints_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_server
-.PHONY : add_two_ints_server
-
-# fast build rule for target.
-add_two_ints_server/fast:
-	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/build
-.PHONY : add_two_ints_server/fast
-
-#=============================================================================
 # Target rules for targets named clean-test-results
 
 # Build rule for target.
@@ -237,45 +185,6 @@ clean-test-results: cmake_check_build_system
 clean-test-results/fast:
 	$(MAKE) -f CMakeFiles/clean-test-results.dir/build.make CMakeFiles/clean-test-results.dir/build
 .PHONY : clean-test-results/fast
-
-#=============================================================================
-# Target rules for targets named face_pose_srv_client
-
-# Build rule for target.
-face_pose_srv_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 face_pose_srv_client
-.PHONY : face_pose_srv_client
-
-# fast build rule for target.
-face_pose_srv_client/fast:
-	$(MAKE) -f CMakeFiles/face_pose_srv_client.dir/build.make CMakeFiles/face_pose_srv_client.dir/build
-.PHONY : face_pose_srv_client/fast
-
-#=============================================================================
-# Target rules for targets named face_pose_srv_server
-
-# Build rule for target.
-face_pose_srv_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 face_pose_srv_server
-.PHONY : face_pose_srv_server
-
-# fast build rule for target.
-face_pose_srv_server/fast:
-	$(MAKE) -f CMakeFiles/face_pose_srv_server.dir/build.make CMakeFiles/face_pose_srv_server.dir/build
-.PHONY : face_pose_srv_server/fast
-
-#=============================================================================
-# Target rules for targets named listener
-
-# Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
-
-# fast build rule for target.
-listener/fast:
-	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
-.PHONY : listener/fast
 
 #=============================================================================
 # Target rules for targets named rosbuild_precompile
@@ -369,19 +278,6 @@ rospack_gensrv_all/fast:
 .PHONY : rospack_gensrv_all/fast
 
 #=============================================================================
-# Target rules for targets named talker
-
-# Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
-
-# fast build rule for target.
-talker/fast:
-	$(MAKE) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-.PHONY : talker/fast
-
-#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -446,143 +342,57 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
-# target to build an object file
-src/LaserScanToPointCloud.o:
-	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LaserScanToPointCloud.o
-.PHONY : src/LaserScanToPointCloud.o
+#=============================================================================
+# Target rules for targets named legsDetector_node
 
-# target to preprocess a source file
-src/LaserScanToPointCloud.i:
-	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LaserScanToPointCloud.i
-.PHONY : src/LaserScanToPointCloud.i
+# Build rule for target.
+legsDetector_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 legsDetector_node
+.PHONY : legsDetector_node
 
-# target to generate assembly for a file
-src/LaserScanToPointCloud.s:
-	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LaserScanToPointCloud.s
-.PHONY : src/LaserScanToPointCloud.s
+# fast build rule for target.
+legsDetector_node/fast:
+	$(MAKE) -f src/legdetection/CMakeFiles/legsDetector_node.dir/build.make src/legdetection/CMakeFiles/legsDetector_node.dir/build
+.PHONY : legsDetector_node/fast
 
-# target to build an object file
-src/LegDetection.o:
-	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegDetection.o
-.PHONY : src/LegDetection.o
+#=============================================================================
+# Target rules for targets named LegsDetector
 
-# target to preprocess a source file
-src/LegDetection.i:
-	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegDetection.i
-.PHONY : src/LegDetection.i
+# Build rule for target.
+LegsDetector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LegsDetector
+.PHONY : LegsDetector
 
-# target to generate assembly for a file
-src/LegDetection.s:
-	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegDetection.s
-.PHONY : src/LegDetection.s
+# fast build rule for target.
+LegsDetector/fast:
+	$(MAKE) -f src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/build.make src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/build
+.PHONY : LegsDetector/fast
 
-# target to build an object file
-src/LegsDetector.o:
-	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.o
-	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegsDetector.o
-.PHONY : src/LegsDetector.o
+#=============================================================================
+# Target rules for targets named laserScanToPointCloud
 
-# target to preprocess a source file
-src/LegsDetector.i:
-	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.i
-	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegsDetector.i
-.PHONY : src/LegsDetector.i
+# Build rule for target.
+laserScanToPointCloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 laserScanToPointCloud
+.PHONY : laserScanToPointCloud
 
-# target to generate assembly for a file
-src/LegsDetector.s:
-	$(MAKE) -f CMakeFiles/LaserScanToPointCloud.dir/build.make CMakeFiles/LaserScanToPointCloud.dir/src/LegsDetector.s
-	$(MAKE) -f CMakeFiles/LegDetection.dir/build.make CMakeFiles/LegDetection.dir/src/LegsDetector.s
-.PHONY : src/LegsDetector.s
+# fast build rule for target.
+laserScanToPointCloud/fast:
+	$(MAKE) -f src/laserscan/CMakeFiles/laserScanToPointCloud.dir/build.make src/laserscan/CMakeFiles/laserScanToPointCloud.dir/build
+.PHONY : laserScanToPointCloud/fast
 
-# target to build an object file
-src/add_two_ints_client.o:
-	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.o
-.PHONY : src/add_two_ints_client.o
+#=============================================================================
+# Target rules for targets named laserScanToSamgar
 
-# target to preprocess a source file
-src/add_two_ints_client.i:
-	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.i
-.PHONY : src/add_two_ints_client.i
+# Build rule for target.
+laserScanToSamgar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 laserScanToSamgar
+.PHONY : laserScanToSamgar
 
-# target to generate assembly for a file
-src/add_two_ints_client.s:
-	$(MAKE) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.s
-.PHONY : src/add_two_ints_client.s
-
-# target to build an object file
-src/add_two_ints_server.o:
-	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.o
-.PHONY : src/add_two_ints_server.o
-
-# target to preprocess a source file
-src/add_two_ints_server.i:
-	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.i
-.PHONY : src/add_two_ints_server.i
-
-# target to generate assembly for a file
-src/add_two_ints_server.s:
-	$(MAKE) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.s
-.PHONY : src/add_two_ints_server.s
-
-# target to build an object file
-src/face_pose_srv_client.o:
-	$(MAKE) -f CMakeFiles/face_pose_srv_client.dir/build.make CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.o
-.PHONY : src/face_pose_srv_client.o
-
-# target to preprocess a source file
-src/face_pose_srv_client.i:
-	$(MAKE) -f CMakeFiles/face_pose_srv_client.dir/build.make CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.i
-.PHONY : src/face_pose_srv_client.i
-
-# target to generate assembly for a file
-src/face_pose_srv_client.s:
-	$(MAKE) -f CMakeFiles/face_pose_srv_client.dir/build.make CMakeFiles/face_pose_srv_client.dir/src/face_pose_srv_client.s
-.PHONY : src/face_pose_srv_client.s
-
-# target to build an object file
-src/face_pose_srv_server.o:
-	$(MAKE) -f CMakeFiles/face_pose_srv_server.dir/build.make CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.o
-.PHONY : src/face_pose_srv_server.o
-
-# target to preprocess a source file
-src/face_pose_srv_server.i:
-	$(MAKE) -f CMakeFiles/face_pose_srv_server.dir/build.make CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.i
-.PHONY : src/face_pose_srv_server.i
-
-# target to generate assembly for a file
-src/face_pose_srv_server.s:
-	$(MAKE) -f CMakeFiles/face_pose_srv_server.dir/build.make CMakeFiles/face_pose_srv_server.dir/src/face_pose_srv_server.s
-.PHONY : src/face_pose_srv_server.s
-
-# target to build an object file
-src/listener.o:
-	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.o
-.PHONY : src/listener.o
-
-# target to preprocess a source file
-src/listener.i:
-	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.i
-.PHONY : src/listener.i
-
-# target to generate assembly for a file
-src/listener.s:
-	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.s
-.PHONY : src/listener.s
-
-# target to build an object file
-src/talker.o:
-	$(MAKE) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/talker.o
-.PHONY : src/talker.o
-
-# target to preprocess a source file
-src/talker.i:
-	$(MAKE) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/talker.i
-.PHONY : src/talker.i
-
-# target to generate assembly for a file
-src/talker.s:
-	$(MAKE) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/talker.s
-.PHONY : src/talker.s
+# fast build rule for target.
+laserScanToSamgar/fast:
+	$(MAKE) -f src/laserscan/CMakeFiles/laserScanToSamgar.dir/build.make src/laserscan/CMakeFiles/laserScanToSamgar.dir/build
+.PHONY : laserScanToSamgar/fast
 
 # Help Target
 help:
@@ -590,21 +400,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... LaserScanToPointCloud"
-	@echo "... LegDetection"
 	@echo "... ROSBUILD_genmsg_cpp"
 	@echo "... ROSBUILD_genmsg_lisp"
 	@echo "... ROSBUILD_genmsg_py"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
 	@echo "... ROSBUILD_gensrv_py"
-	@echo "... add_two_ints_client"
-	@echo "... add_two_ints_server"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
-	@echo "... face_pose_srv_client"
-	@echo "... face_pose_srv_server"
-	@echo "... listener"
 	@echo "... rebuild_cache"
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
@@ -613,39 +416,15 @@ help:
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
 	@echo "... rospack_gensrv_all"
-	@echo "... talker"
 	@echo "... test"
 	@echo "... test-future"
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
-	@echo "... src/LaserScanToPointCloud.o"
-	@echo "... src/LaserScanToPointCloud.i"
-	@echo "... src/LaserScanToPointCloud.s"
-	@echo "... src/LegDetection.o"
-	@echo "... src/LegDetection.i"
-	@echo "... src/LegDetection.s"
-	@echo "... src/LegsDetector.o"
-	@echo "... src/LegsDetector.i"
-	@echo "... src/LegsDetector.s"
-	@echo "... src/add_two_ints_client.o"
-	@echo "... src/add_two_ints_client.i"
-	@echo "... src/add_two_ints_client.s"
-	@echo "... src/add_two_ints_server.o"
-	@echo "... src/add_two_ints_server.i"
-	@echo "... src/add_two_ints_server.s"
-	@echo "... src/face_pose_srv_client.o"
-	@echo "... src/face_pose_srv_client.i"
-	@echo "... src/face_pose_srv_client.s"
-	@echo "... src/face_pose_srv_server.o"
-	@echo "... src/face_pose_srv_server.i"
-	@echo "... src/face_pose_srv_server.s"
-	@echo "... src/listener.o"
-	@echo "... src/listener.i"
-	@echo "... src/listener.s"
-	@echo "... src/talker.o"
-	@echo "... src/talker.i"
-	@echo "... src/talker.s"
+	@echo "... legsDetector_node"
+	@echo "... LegsDetector"
+	@echo "... laserScanToPointCloud"
+	@echo "... laserScanToSamgar"
 .PHONY : help
 
 

@@ -1,0 +1,3 @@
+rosbuild_add_executable(laserScanToPointCloud LaserScanToPointCloud.cpp)
+rosbuild_add_executable(laserScanToSamgar laserScanToSamgar.cpp)
+
