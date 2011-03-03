@@ -17,6 +17,7 @@ public:
   ros::Publisher scan_pub_;
 
   LegsDetector *ld;
+  FILE *fp;
 
   LegDetection(ros::NodeHandle n) : 
     n_(n),
@@ -27,6 +28,7 @@ public:
 
     ld = new LegsDetector(312, 2, 2);
     ld->setDebug(true, 20);
+    fp = fopen("legs_record.txt", "a");
 
   }
 
@@ -55,6 +57,8 @@ public:
 	printf("\n %.1lf %.1lf %.2lf %d", RTOD(scan_in->angle_min), RTOD(scan_in->angle_max), RTOD(scan_in->angle_increment), i);
 	ld->update(laserVector);
 	int legHowMany = ld->getHowMany();
+	if ( legHowMany > 0 ) fprintf(fp, "\n");
+	for (int i=0; i< legHowMany; i++) fprintf(fp, " %dth leg => (%.2lfm at %.2lf degree) ", i+1, ld->getDistance(i), RTOD(ld->getBearing(i)) );
 
     //scan_pub_.publish(cloud);
 
