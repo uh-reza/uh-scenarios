@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+	<include file="$(find uh_study)/launch/pc1_remote.launch" />
+	<include file="$(find uh_study)/launch/pc2_remote.launch" />
+</launch>

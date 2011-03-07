@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <launch>
 
-	<group>
-		<machine name="pc1" address="192.168.0.101" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
 
 		<!--include file="$(find cob_machine)/$(env ROBOT).machine" /-->
 		<param name="robot_description" command="$(find xacro)/xacro.py '$(find cob_description)/ros/robots/$(env ROBOT).urdf.xacro'" />
@@ -28,6 +26,5 @@
 	
 		<!-- start teleoperation package-->
 		<include file="$(find cob_teleop)/ros/launch/teleop.launch" />
-	</group>
 		
 </launch>
