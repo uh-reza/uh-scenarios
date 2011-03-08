@@ -4,7 +4,9 @@
   <machine name="pc2" address="192.168.0.102" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
 
 	  <node pkg="sound_play" type="soundplay_node.py" name="soundplay" respawn="false" output="screen"/>
-	  <include file="$(find cob_light)/ros/launch/light.launch" />
+	  <!--include file="$(find cob_light)/ros/launch/light.launch" /-->
+	  <rosparam command="load" ns="light_controller" file="$(find cob_light)/ros/launch/$(env ROBOT).yaml"/>
+	  <node pkg="cob_light" type="cob_light.py" name="light_node" ns="light_controller" cwd="node" respawn="false" output="screen" />
 
 	  <!-- The camera node -->
 	  <node ns="stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
