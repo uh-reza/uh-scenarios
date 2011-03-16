@@ -37,17 +37,19 @@ class FetchAndCarry(script):
 		listener = tf.TransformListener(True, rospy.Duration(10.0))
 	
 		# prepare for grasping
-		self.sss.move("base","kitchen")
+		self.sss.move("base","shelf")
 		self.sss.move("arm","pregrasp")
 		handle_sdh = self.sss.move("sdh","cylopen",False)
+
+		self.sss.wait_for_input()
 
 		# caculate tranformations, we need cup coordinates in arm_7_link coordinate system
 		cup = PointStamped()
 		cup.header.stamp = rospy.Time.now()
 		cup.header.frame_id = "/map"
-		cup.point.x = -3.0
-		cup.point.y = 0.08
-		cup.point.z = 1.02
+		cup.point.x = -1.0
+		cup.point.y = 1.3
+		cup.point.z = 1.2
 		self.sss.sleep(2) # wait for transform to be calculated
 		handle_sdh.wait()
 		
