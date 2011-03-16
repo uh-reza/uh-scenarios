@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<!-- start all drivers in pc1 -->
+	<include file="$(find uh_bringup)/launch/pc1.launch" />
+
+	<!-- start all drivers in pc2 -->
+	<include file="$(find uh_bringup)/launch/pc2.launch" />
+
+</launch>

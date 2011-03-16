@@ -1,0 +1,15 @@
+<package>
+  <description brief="uh_bringup">
+
+     uh_bringup
+
+  </description>
+  <author></author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/uh_bringup</url>
+  <depend package="cob_bringup"/>
+
+</package>
+
+
