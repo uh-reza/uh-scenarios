@@ -1,28 +1,29 @@
 <?xml version="1.0"?>
 <launch>
+	
+	<group>
+		<machine name="pc2" address="192.168.0.102" default="false"/>
 
-	<machine name="pc2" address="192.168.0.102" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" default="true"/>
+		<node pkg="sound_play" type="soundplay_node.py" name="soundplay" respawn="false" output="screen"/>
 
-	<node pkg="sound_play" type="soundplay_node.py" name="soundplay" respawn="false" output="screen"/>
+		<include file="$(find cob_light)/ros/launch/light.launch" />
 
-	<include file="$(find cob_light)/ros/launch/light.launch" />
+		<!-- The camera node -->
+		<node ns="/stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
+			<param name="ip_address" type="str" value="169.254.236.139"/>
+			<param name="trigger_mode" type="str" value="streaming"/>
+			<remap from="camera/image_raw" to="image_raw"/>
+			<remap from="camera/camera_info" to="camera_info" />
+			<rosparam command="load" file="$(find uh_bringup)/common/camera_setting.yaml" />
+		</node>
 
-	<!-- The camera node -->
-	<node ns="/stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
-		<param name="ip_address" type="str" value="169.254.236.139"/>
-		<param name="trigger_mode" type="str" value="streaming"/>
-		<remap from="camera/image_raw" to="image_raw"/>
-		<remap from="camera/camera_info" to="camera_info" />
-		<rosparam command="load" file="$(find uh_bringup)/common/camera_setting.yaml" />
-	</node>
-
-	<!-- The camera node -->
-	<node ns="stereo/right" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
-		<param name="ip_address" type="str" value="169.254.47.10"/>
-		<param name="trigger_mode" type="str" value="streaming"/>
-		<remap from="camera/image_raw" to="image_raw"/>
-		<remap from="camera/camera_info" to="camera_info" />
-		<rosparam command="load" file="$(find uh_bringup)/common/camera_setting.yaml" />
-	</node>
-
+		<!-- The camera node -->
+		<node ns="stereo/right" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
+			<param name="ip_address" type="str" value="169.254.47.10"/>
+			<param name="trigger_mode" type="str" value="streaming"/>
+			<remap from="camera/image_raw" to="image_raw"/>
+			<remap from="camera/camera_info" to="camera_info" />
+			<rosparam command="load" file="$(find uh_bringup)/common/camera_setting.yaml" />
+		</node>
+	</group>
 </launch>

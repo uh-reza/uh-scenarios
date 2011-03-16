@@ -11,6 +11,8 @@
 
   <depend package="uh_bringup"/>
   <depend package="uh_2dnav"/>
+  <depend package="cob_script_server"/>
+  <depend package="cob_dashboard"/>
 
 </package>
 

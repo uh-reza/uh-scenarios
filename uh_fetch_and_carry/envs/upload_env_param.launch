@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- send ROBOT parameters to parameter server -->
+	<rosparam command="load" ns="base" file="$(find uh_fetch_and_carry)/envs/$(env ROBOT_ENV)/navigation_goals.yaml"/>
+</launch>

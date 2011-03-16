@@ -1,0 +1,4 @@
+buttons: [[home,move,home],
+  [park,move,park],
+  [kitchen,move,kitchen],
+  [tv,move,tv]]
