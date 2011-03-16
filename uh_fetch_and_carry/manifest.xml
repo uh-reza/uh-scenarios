@@ -1,0 +1,17 @@
+<package>
+  <description brief="uh_fetch_and_carry">
+
+     uh_fetch_and_carry
+
+  </description>
+  <author></author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/uh_fetch_and_carry</url>
+
+  <depend package="uh_bringup"/>
+  <depend package="uh_2dnav"/>
+
+</package>
+
+

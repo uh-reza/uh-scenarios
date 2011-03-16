@@ -1,0 +1,16 @@
+<package>
+  <description brief="uh_2dnav">
+
+     uh_2dnav
+
+  </description>
+  <author></author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/uh_2dnav</url>
+
+  <depend package="cob_2dnav"/>
+
+</package>
+
+

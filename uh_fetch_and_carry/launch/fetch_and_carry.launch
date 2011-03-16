@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<!-- start all drivers -->	
+	<include file="$(find uh_bringup)/launch/drivers.launch" />
+
+	<!-- start navigation -->
+	<!--include file="$(find uh_2dnav)/launch/2dnav.launch" /-->
+	<include file="$(find uh_2dnav)/launch/2dnav_ipa.launch" />
+
+</launch>
