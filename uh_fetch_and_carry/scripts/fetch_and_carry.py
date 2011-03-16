@@ -47,7 +47,7 @@ class FetchAndCarry(script):
 		cup = PointStamped()
 		cup.header.stamp = rospy.Time.now()
 		cup.header.frame_id = "/map"
-		cup.point.x = -1.0
+		cup.point.x = -0.2
 		cup.point.y = 1.3
 		cup.point.z = 1.2
 		self.sss.sleep(2) # wait for transform to be calculated
@@ -56,12 +56,12 @@ class FetchAndCarry(script):
 		if not self.sss.parse:
 			cup = listener.transformPoint('/arm_7_link',cup)
 			# transform grasp point to sdh center
-			cup.point.z = cup.point.z - 0.2
+			cup.point.z = cup.point.z + 0.2
 
 		# move in front of cup
 		pregrasp_distance = 0.2
 		grasp_offset = 0.05 # offset between arm_7_link and sdh_grasp_link
-		self.sss.move_cart_rel("arm",[[cup.point.x, cup.point.y, cup.point.z-grasp_offset-pregrasp_distance], [0, 0, 0]])
+		self.sss.move_cart_rel("arm",[[cup.point.x, cup.point.y, cup.point.z-grasp_offset+pregrasp_distance], [0, 0, 0]])
 		# move to cup
 		self.sss.move_cart_rel("arm",[[0.0, 0.0, pregrasp_distance], [0, 0, 0]])
 		# grasp cup
@@ -74,7 +74,6 @@ class FetchAndCarry(script):
 		handle01 = self.sss.move("arm","grasp-to-tray",False)
 		self.sss.move("tray","up")
 		handle01.wait()
-		self.sss.move("arm","tray")
 		self.sss.move("sdh","cylopen")
 		self.sss.move_cart_rel("arm",[[0.0, 0.0, -0.1], [0, 0, 0]])
 		handle01 = self.sss.move("arm","tray-to-folded",False)
