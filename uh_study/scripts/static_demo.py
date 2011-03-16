@@ -16,10 +16,10 @@ class GraspScript(script):
 	def Initialize(self):
 		# initialize components (not needed for simulation)
 		self.sss.set_light("yellow")
-		self.sss.init("sdh")
-		self.sss.init("tray")
+		#self.sss.init("sdh")
+		#self.sss.init("tray")
 		#self.sss.init("torso")
-		self.sss.init("arm")
+		#self.sss.init("arm")
 		#self.sss.init("eyes")
 		#self.sss.init("base")
 		
@@ -30,6 +30,7 @@ class GraspScript(script):
 		self.sss.move("torso","home",False)
 		self.sss.move("sdh","home",False)
 		self.sss.move("tray","down",False)
+		self.sss.say(["Hello"], False)
 		handle01.wait()
 		if not self.sss.parse:
 			print "Enter to Continue..."
@@ -37,8 +38,7 @@ class GraspScript(script):
 		#self.sss.move("base","home")
 	
 		self.sss.set_light("red")
-		self.sss.say(["Hello"], False)
-		self.sss.sleep(2)
+		self.sss.sleep(1)
 		#self.sss.say(["Welcome To"], False)
 		#self.sss.sleep(2)
 		#self.sss.say(["Robot House"], False)
@@ -63,7 +63,7 @@ class GraspScript(script):
 		self.sss.set_light("blue")
 		self.sss.move("arm","grasp",True)
 		self.sss.set_light("red")
-		self.sss.sleep(2)
+		self.sss.sleep(1)
 		self.sss.move("sdh","cylclosed",True)
 		self.sss.sleep(1)
 		self.sss.move("arm","pregrasp",True)
@@ -82,7 +82,7 @@ class GraspScript(script):
 		self.sss.set_light("blue")
 		self.sss.sleep(1)
 		self.sss.move("sdh","cylopen",True)
-		self.sss.sleep(2)
+		self.sss.sleep(1)
 
 		self.sss.move("arm","overtablet",True)
 		self.sss.sleep(1)
@@ -103,11 +103,6 @@ class GraspScript(script):
 		self.sss.sleep(1)
 
 	def Run(self):
-		self.StaticDemo()
-		self.StaticDemo()
-		self.StaticDemo()
-		self.StaticDemo()
-		self.StaticDemo()
 		self.StaticDemo()
 
 

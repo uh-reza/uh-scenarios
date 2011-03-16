@@ -1,16 +1,14 @@
 <?xml version="1.0"?>
 <launch>
 	<group>
-		<machine name="pc1" address="192.168.0.101" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
+		<!-- Run the map server -->
+		<node name="map_server" pkg="map_server" type="map_server" args="$(find uh_study)/common/$(env ROBOT_ENV)/map.yaml"/>
 
-		 <!-- Run the map server -->
-		  <node name="map_server" pkg="map_server" type="map_server" args="$(find uh_study)/common/$(env ROBOT_ENV)/map.yaml"/>
-
-	     <node name="cob_gridmap_listener" pkg="cob_platform_ctrl" type="gridmap_listener" cwd="node" respawn="false" output="screen"/>
-		    <node name="cob_platform_ctrl" pkg="cob_platform_ctrl" type="platform_ctrl" cwd="node" respawn="false" output="screen">
-		    	<remap from="base_odometry/odom" to="base_controller/odometry"/>
-		    	<remap from="/scan_front" to="/scan_front_raw"/>
-		    	<remap from="/scan_rear" to="/scan_rear_raw"/>
-		    </node>
+		<node name="cob_gridmap_listener" pkg="cob_platform_ctrl" type="gridmap_listener" cwd="node" respawn="false" output="screen"/>
+		<node name="cob_platform_ctrl" pkg="cob_platform_ctrl" type="platform_ctrl" cwd="node" respawn="false" output="screen">
+			<remap from="base_odometry/odom" to="base_controller/odometry"/>
+			<remap from="/scan_front" to="/scan_front_raw"/>
+			<remap from="/scan_rear" to="/scan_rear_raw"/>
+		</node>
 	</group>
 </launch>
