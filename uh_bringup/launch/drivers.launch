@@ -1,16 +1,10 @@
 <?xml version="1.0"?>
 <launch>
 	
-	<!-- start all drivers in pc1 -->	<group>
-		<machine name="pc1" address="192.168.0.101" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
-		
-		<include file="$(find uh_bringup)/launch/pc1.launch" />
-	</group>
+	<!-- start all drivers in pc1 -->	
+	<include file="$(find uh_bringup)/launch/pc1.launch" />
 
 	<!-- start all drivers in pc2 -->
-	<group>
-		<machine name="pc2" address="192.168.0.102" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="reza" password="panasonic" default="true"/>
-		
-		<include file="$(find uh_bringup)/launch/pc2.launch" />
-	</group>
+	<include file="$(find uh_bringup)/launch/pc2.launch" />
+
 </launch>
