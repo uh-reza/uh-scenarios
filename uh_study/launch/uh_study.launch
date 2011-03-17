@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- start bringup -->
+	<include file="$(find cob_bringup)/ros/launch/cob3-2.launch" />
+
+	<!-- start teleoperation package-->
+	<include file="$(find cob_teleop)/ros/launch/teleop.launch" />
+
+	<!-- start navigation -->
+	<!--include file="$(find uh_study)/ros/launch/2dnav.launch" /-->
+	<include file="$(find uh_study)/ros/launch/2dnav_ipa.launch" />
+		
+</launch>
