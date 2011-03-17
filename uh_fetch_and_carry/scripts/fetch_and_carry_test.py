@@ -14,53 +14,21 @@ from geometry_msgs.msg import *
 class FetchAndCarry(script):
 		
 	def Initialize(self):
-		# initialize components
+		# initialize components (not needed for simulation)
 		self.sss.init("tray")
 		self.sss.init("torso")
 		self.sss.init("arm")
 		self.sss.init("sdh")
 		self.sss.init("base")
-
-		# revocer components in case there was an emergency stop before
-		self.sss.recover("tray")
-		self.sss.recover("torso")
-		self.sss.recover("arm")
-		self.sss.recover("base")
-
-		# set default configurations
-		self.sss.set_default_velocity("arm",0.3)
 		
 		# move to initial positions
 		handle_arm = self.sss.move("arm","folded",False)
 		handle_torso = self.sss.move("torso","home",False)
 		handle_sdh = self.sss.move("sdh","home",False)
-		handle_tray = self.sss.move("tray","down")
+		self.sss.move("tray","down")
 		handle_arm.wait()
 		handle_torso.wait()
 		handle_sdh.wait()
-
-		# check, if all components are working
-		retval = handle_arm.get_error_code()
-		if retval > 0:
-			rospy.logerr("error in arm, aborting...")
-			return False
-
-		retval = handle_torso.get_error_code()
-		if retval > 0:
-			rospy.logerr("error in torso, aborting...")
-			return False
-
-		retval = handle_sdh.get_error_code()
-		if retval > 0:
-			rospy.logerr("error in sdh, aborting...")
-			return False
-
-		retval = handle_tray.get_error_code()
-		if retval > 0:
-			rospy.logerr("error in tray, aborting...")
-			return False
-
-		# call for help to localize the base
 		if not self.sss.parse:
 			print "Please localize the robot with rviz"
 		self.sss.wait_for_input()
@@ -68,22 +36,57 @@ class FetchAndCarry(script):
 	def Run(self): 
 		listener = tf.TransformListener(True, rospy.Duration(10.0))
 	
-		# prepare for grasping
-		self.sss.move("base","shelf")
-		self.sss.move("arm","pregrasp")
-		handle_sdh = self.sss.move("sdh","cylopen",False)
-
-		#self.sss.wait_for_input()
+		# going to sofa offering drink
+		handle_base = self.sss.move("base","tv",False)
+		while not (handle_base.get_state() == 3)  
+			self.sss.set_light("red")
+			sleep(.5)
+			self.sss.set_light([0,0,0])
+			sleep(.5)
+		handle_base.wait()
+		self.sss.set_light("green")
+		
+		self.sss.say(["Hello there, can I get you anything to dirink"], False)
+		self.sss.move("torso","nod")
+		if not self.sss.parse:
+			print "Please have your choice"
+		choice = self.sss.wait_for_input()
 
 		# caculate tranformations, we need cup coordinates in arm_7_link coordinate system
 		cup = PointStamped()
 		cup.header.stamp = rospy.Time.now()
 		cup.header.frame_id = "/map"
-		cup.point.x = -1.6
-		cup.point.y = 1.0
-		cup.point.z = 0.86
+		if choice == "1"
+			cup.point.x = -1.6
+			cup.point.y = 1.0
+			cup.point.z = 0.86
+		if choice == "2"
+			cup.point.x = -1.6
+			cup.point.y = 1.0
+			cup.point.z = 0.86
+		if choice == "3"
+			cup.point.x = -1.6
+			cup.point.y = 1.0
+			cup.point.z = 0.86
 		self.sss.sleep(2) # wait for transform to be calculated
-		handle_sdh.wait()
+
+		handle_base = self.sss.move("base","shelf",False)
+		while not (handle_base.get_state() == 3)  
+			self.sss.set_light("red")
+			sleep(.5)
+			self.sss.set_light([0,0,0])
+			sleep(.5)
+		handle_base.wait()
+
+		while not (handle_shelf.get_state() == 3)  
+			self.sss.set_light("red")
+			sleep(.5)
+			self.sss.set_light([0,0,0])
+			sleep(.5)
+		handle_shelf.wait()
+
+		self.sss.move("arm","pregrasp")
+		self.sss.move("sdh","cylopen")
 		
 		if not self.sss.parse:
 			cup = listener.transformPoint('/arm_7_link',cup)
@@ -114,7 +117,7 @@ class FetchAndCarry(script):
 		handle01.wait()
 
 		# deliver cup to order position
-		self.sss.move("base","order")
+		self.sss.move("base","tv")
 		self.sss.say("Here's your drink.")
 		self.sss.move("torso","nod")
 

@@ -32,5 +32,9 @@
 
 		<!-- teleop -->	
 		<include file="$(find cob_teleop)/ros/launch/teleop.launch" />
+		
+		
+		<!-- script server -->
+		<node pkg="cob_script_server" type="script_server.py" name="script_server" cwd="node" ns="/script_server" respawn="false" output="screen" />
 	</group>
 </launch>

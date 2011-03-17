@@ -1,0 +1,17 @@
+<package>
+  <description brief="uh_mind">
+
+     uh_mind
+
+  </description>
+  <author></author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/uh_mind</url>
+  <depend package="roscpp"/>
+  <depend package="actionlib"/>
+  <depend package="cob_script_server"/>
+
+</package>
+
+
