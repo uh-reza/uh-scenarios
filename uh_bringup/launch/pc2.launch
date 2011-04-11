@@ -7,6 +7,7 @@
 		<node pkg="sound_play" type="soundplay_node.py" name="soundplay" respawn="false" output="screen"/>
 
 		<include file="$(find cob_light)/ros/launch/light.launch" />
+		<include file="$(find cob_sound)/ros/launch/sound.launch" />
 
 		<!-- The camera node -->
 		<node ns="/stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
