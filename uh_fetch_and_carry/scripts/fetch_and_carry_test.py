@@ -102,7 +102,7 @@ class FetchAndCarry(script):
 		self.sss.set_light("green")
 		
 		self.sss.move("torso","nod")
-		self.sss.say(["Hello there, can I get you anything to dirink"], False)
+		self.sss.say(["Hello there, can I get you, anything to drink"], False)
 		self.sss.move("torso","nod")
 		if not self.sss.parse:
 			print "Please have your choice"
@@ -173,7 +173,7 @@ class FetchAndCarry(script):
 		# deliver cup to order position
 		handle_base = self.sss.move("base",tv)
 		self.blink(handle_base,"red")
-		self.sss.say("Here's your drink.")
+		self.sss.say(["Here s your drink"])
 		self.sss.move("torso","nod")
 
 	def blink(self, handle, color):
