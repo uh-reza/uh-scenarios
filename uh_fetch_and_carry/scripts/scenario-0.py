@@ -89,8 +89,9 @@ class FetchAndCarry(script):
 		
 			if handle_base.get_state() != 3:		
 				print diff
-				tv[0] = tv[0] - 0.5 
-				tv[1] = tv[1] + 0.5
+				#tv[0] = tv[0] - 0.5 
+				#tv[1] = tv[1] + 0.5
+				tv[2] = 3*3.1415926/4
 				handle_base = self.sss.move("base",tv,False)
 				if not self.sss.parse:
 					while not (handle_base.get_state() == 3) :
@@ -102,7 +103,8 @@ class FetchAndCarry(script):
 		self.sss.set_light("green")
 		
 		self.sss.move("torso","nod")
-		self.sss.say(["Hello there, can I get you, anything to drink"], False)
+		self.sss.say(["Hello there"])
+		self.sss.say(["can I get you anything to drink"], False)
 		self.sss.move("torso","nod")
 		if not self.sss.parse:
 			print "Please have your choice"
