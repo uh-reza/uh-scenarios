@@ -70,46 +70,25 @@ class FetchAndCarry(script):
 	
 		# going to sofa offering drink
 		tv = rospy.get_param("/script_server/base/tv")
+		# P1
+		tv[0] = tv[0] - 0.0 
+		tv[1] = tv[1] - 0.0
 		tv[2] = 2*3.1415926/4
-		handle_base = self.sss.move("base",tv,False)
-		if not self.sss.parse:
-			starting_time = rospy.Time.now()
-			while (not (handle_base.get_state() == 3)) and (30 > (rospy.Time.now().secs-starting_time.secs) ):
-				print rospy.Time.now().secs-starting_time.secs
-				diff = rospy.Time.now().secs-starting_time.secs
-				try:
-					(trans,rot) = listener.lookupTransform('/map', '/base_link', rospy.Time(0))
-					print trans
-				except (tf.LookupException, tf.ConnectivityException):
-					continue
-				self.sss.set_light("red")
-				self.sss.sleep(.5)
-				self.sss.set_light([0,0,0])
-				self.sss.sleep(.5)
-		
-			if handle_base.get_state() != 3:		
-				print diff
-				tv[0] = tv[0] - 0.5 
-				tv[1] = tv[1] + 0.5
-				handle_base = self.sss.move("base",tv,False)
-				if not self.sss.parse:
-					while not (handle_base.get_state() == 3) :
-						self.sss.set_light("red")
-						self.sss.sleep(.5)
-						self.sss.set_light([0,0,0])
-						self.sss.sleep(.5)
-			
-		self.sss.set_light("green")
-		
-		self.sss.move("torso","nod")
-		self.sss.say(["Hello there, can I get you, anything to drink"], False)
-		self.sss.move("torso","nod")
-		if not self.sss.parse:
-			print "Please have your choice"
-		choice = self.sss.wait_for_input()
+		# P2
+		tv[0] = tv[0] - 0.0 
+		tv[1] = tv[1] - 0.5
+		tv[2] = 2*3.1415926/4
+		# P3
+		tv[0] = tv[0] - 1.0 
+		tv[1] = tv[1] - 0.0
+		tv[2] = 3*3.1415926/4
+		# P4
+		tv[0] = tv[0] - 1.0 
+		tv[1] = tv[1] + 1.3
+		tv[2] = 0*3.1415926/4
 
 		shelf = rospy.get_param("/script_server/base/shelf")
-		shelf[2] = 3.1415926
+		#shelf[2] = 3.1415926
 		handle_base = self.sss.move("base",shelf,False)
 		self.blink(handle_base,"red")
 		
@@ -127,18 +106,9 @@ class FetchAndCarry(script):
 		cup = PointStamped()
 		cup.header.stamp = rospy.Time.now()
 		cup.header.frame_id = "/map"
-		if choice == "1":
-			cup.point.x = -1.6
-			cup.point.y = 1.0
-			cup.point.z = 0.86
-		if choice == "2":
-			cup.point.x = -1.6
-			cup.point.y = 1.0
-			cup.point.z = 0.86
-		if choice == "3":
-			cup.point.x = -1.6
-			cup.point.y = 1.0
-			cup.point.z = 0.86
+		cup.point.x = -1.6
+		cup.point.y = 1.0
+		cup.point.z = 0.86
 
 		self.sss.sleep(2) # wait for transform to be calculated
 		if not self.sss.parse:
@@ -162,10 +132,12 @@ class FetchAndCarry(script):
 		handle01 = self.sss.move("arm","grasp-to-tray",False)
 		self.sss.move("tray","up")
 		handle01.wait()
+		self.sss.move_cart_rel("arm",[[0.0, 0.0, -0.04], [0, 0, 0]])
+		self.sss.sleep(1)
 
 		self.sss.move("sdh","cylopen")
 
-		self.sss.move_cart_rel("arm",[[0.0, 0.0, 0.2], [0, 0, 0]])
+		self.sss.move_cart_rel("arm",[[0.0, 0.0, 0.24], [0, 0, 0]])
 
 		handle01 = self.sss.move("arm","tray-to-folded",False)
 		self.sss.sleep(4)
@@ -177,6 +149,17 @@ class FetchAndCarry(script):
 		self.blink(handle_base,"red")
 		self.sss.say(["Here s your drink"])
 		self.sss.move("torso","nod")
+
+		if not self.sss.parse:
+			print "Press enter to return to station"
+		choice = self.sss.wait_for_input()
+
+		handle_base = self.sss.move("base","park",False)
+		self.sss.move("tray","down",False)
+		self.blink(handle_base,"red")
+
+		self.sss.sleep(1)
+		self.sss.set_light([0,0,0])
 
 	def blink(self, handle, color):
 		if not self.sss.parse:

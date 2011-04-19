@@ -91,7 +91,7 @@ class FetchAndCarry(script):
 				print diff
 				#tv[0] = tv[0] - 0.5 
 				#tv[1] = tv[1] + 0.5
-				tv[2] = 3*3.1415926/4
+				#tv[2] = 3*3.1415926/4
 				handle_base = self.sss.move("base",tv,False)
 				if not self.sss.parse:
 					while not (handle_base.get_state() == 3) :
@@ -164,6 +164,8 @@ class FetchAndCarry(script):
 		handle01 = self.sss.move("arm","grasp-to-tray",False)
 		self.sss.move("tray","up")
 		handle01.wait()
+		self.sss.move_cart_rel("arm",[[0.0, 0.0, -0.02], [0, 0, 0]])
+		self.sss.sleep(1)
 
 		self.sss.move("sdh","cylopen")
 
@@ -179,6 +181,18 @@ class FetchAndCarry(script):
 		self.blink(handle_base,"red")
 		self.sss.say(["Here s your drink"])
 		self.sss.move("torso","nod")
+
+		if not self.sss.parse:
+			print "Press enter to return to station"
+		choice = self.sss.wait_for_input()
+
+		handle_base = self.sss.move("base","park",False)
+		self.sss.move("tray","down",False)
+		self.blink(handle_base,"red")
+
+		self.sss.sleep(1)
+		self.sss.set_light([0,0,0])
+
 
 	def blink(self, handle, color):
 		if not self.sss.parse:
