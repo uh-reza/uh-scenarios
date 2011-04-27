@@ -163,6 +163,54 @@ class FetchAndCarry(script):
 			print "Press enter to return to station"
 		self.sss.wait_for_input()
 
+		# P2
+		tv = rospy.get_param("/script_server/base/tv")
+		tv[0] = tv[0] - 0.0 
+		tv[1] = tv[1] - 0.4
+		tv[2] = 2*3.1415926/4
+
+		# deliver cup to order position
+		handle_base = self.sss.move("base",tv)
+		self.blink(handle_base,"red")
+		self.sss.move("torso","nod")
+		self.sss.say(["Here s your drink"])
+
+		if not self.sss.parse:
+			print "Press enter to return to station"
+		self.sss.wait_for_input()
+
+		# P3
+		tv = rospy.get_param("/script_server/base/tv")
+		tv[0] = tv[0] - 0.6 
+		tv[1] = tv[1] - 0.0
+		tv[2] = 1*3.1415926/4
+
+		# deliver cup to order position
+		handle_base = self.sss.move("base",tv)
+		self.blink(handle_base,"red")
+		self.sss.move("torso","nod")
+		self.sss.say(["Here s your drink"])
+
+		if not self.sss.parse:
+			print "Press enter to return to station"
+		self.sss.wait_for_input()
+
+		# P4
+		tv = rospy.get_param("/script_server/base/tv")
+		tv[0] = tv[0] - 1.0 
+		tv[1] = tv[1] + 1.0
+		tv[2] = 0*3.1415926/4
+
+		# deliver cup to order position
+		handle_base = self.sss.move("base",tv)
+		self.blink(handle_base,"red")
+		self.sss.move("torso","nod")
+		self.sss.say(["Here s your drink"])
+
+		if not self.sss.parse:
+			print "Press enter to return to station"
+		self.sss.wait_for_input()
+
 		handle_base = self.sss.move("base","park",False)
 		self.sss.move("tray","down",False)
 		self.blink(handle_base,"red")

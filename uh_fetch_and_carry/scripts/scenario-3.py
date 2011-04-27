@@ -147,11 +147,11 @@ class FetchAndCarry(script):
 		self.blink(handle01,"yellow")
 		handle01.wait()
 
-		# P1
+		# P3
 		tv = rospy.get_param("/script_server/base/tv")
-		tv[0] = tv[0] - 0.0 
+		tv[0] = tv[0] - 0.6 
 		tv[1] = tv[1] - 0.0
-		tv[2] = 2*3.1415926/4
+		tv[2] = 1*3.1415926/4
 
 		# deliver cup to order position
 		handle_base = self.sss.move("base",tv)

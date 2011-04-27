@@ -70,7 +70,10 @@ class FetchAndCarry(script):
 	
 		# going to sofa offering drink
 		tv = rospy.get_param("/script_server/base/tv")
-		tv[2] = 2*3.1415926/4
+		tv[0] = tv[0] - 0.6 
+		tv[1] = tv[1] - 0.0
+		tv[2] = 1*3.1415926/4
+
 		handle_base = self.sss.move("base",tv,False)
 		if not self.sss.parse:
 			starting_time = rospy.Time.now()
@@ -87,19 +90,6 @@ class FetchAndCarry(script):
 				self.sss.set_light([0,0,0])
 				self.sss.sleep(.5)
 		
-			if handle_base.get_state() != 3:		
-				print diff
-				#tv[0] = tv[0] - 0.5 
-				#tv[1] = tv[1] + 0.5
-				#tv[2] = 3*3.1415926/4
-				handle_base = self.sss.move("base",tv,False)
-				if not self.sss.parse:
-					while not (handle_base.get_state() == 3) :
-						self.sss.set_light("red")
-						self.sss.sleep(.5)
-						self.sss.set_light([0,0,0])
-						self.sss.sleep(.5)
-			
 		self.sss.set_light("green")
 		
 		self.sss.move("torso","nod")
@@ -108,82 +98,6 @@ class FetchAndCarry(script):
 		self.sss.move("torso","nod")
 		if not self.sss.parse:
 			print "Please have your choice"
-		choice = self.sss.wait_for_input()
-
-		shelf = rospy.get_param("/script_server/base/shelf")
-		shelf[2] = 3.1415926
-		handle_base = self.sss.move("base",shelf,False)
-		self.blink(handle_base,"red")
-		
-		handle_base = self.sss.move("base","shelf",False)
-		self.blink(handle_base,"red")
-		handle_base = self.sss.move("base","shelf")
-		
-		handle_arm = self.sss.move("arm","pregrasp",False)
-		self.blink(handle_arm,"yellow")
-		
-		handle_sdh = self.sss.move("sdh","cylopen",False)
-		self.blink(handle_sdh,"yellow")
-
-		# caculate tranformations, we need cup coordinates in arm_7_link coordinate system
-		cup = PointStamped()
-		cup.header.stamp = rospy.Time.now()
-		cup.header.frame_id = "/map"
-		if choice == "1":
-			cup.point.x = -1.6
-			cup.point.y = 1.0
-			cup.point.z = 0.86
-		if choice == "2":
-			cup.point.x = -1.6
-			cup.point.y = 1.0
-			cup.point.z = 0.86
-		if choice == "3":
-			cup.point.x = -1.6
-			cup.point.y = 1.0
-			cup.point.z = 0.86
-
-		self.sss.sleep(2) # wait for transform to be calculated
-		if not self.sss.parse:
-			cup = listener.transformPoint('/arm_7_link',cup)
-			# transform grasp point to sdh center
-			cup.point.z = cup.point.z + 0.2
-
-		# move in front of cup
-		pregrasp_distance = 0.2
-		self.sss.move_cart_rel("arm",[[cup.point.x, cup.point.y, cup.point.z+pregrasp_distance], [0, 0, 0]])
-
-		# move to cup
-		self.sss.move_cart_rel("arm",[[0.0, 0.0, -pregrasp_distance], [0, 0, 0]])
-		# grasp cup
-		self.sss.move("sdh","cylclosed")
-
-		# lift cup
-		self.sss.move_cart_rel("arm",[[0.0, 0.1, 0.0], [0, 0, 0]])
-
-		# place cup on tray
-		handle01 = self.sss.move("arm","grasp-to-tray",False)
-		self.sss.move("tray","up")
-		handle01.wait()
-		self.sss.move_cart_rel("arm",[[0.0, 0.0, -0.02], [0, 0, 0]])
-		self.sss.sleep(1)
-
-		self.sss.move("sdh","cylopen")
-
-		self.sss.move_cart_rel("arm",[[0.0, 0.0, 0.2], [0, 0, 0]])
-
-		handle01 = self.sss.move("arm","tray-to-folded",False)
-		self.sss.sleep(4)
-		self.sss.move("sdh","cylclosed",False)
-		handle01.wait()
-
-		# deliver cup to order position
-		handle_base = self.sss.move("base",tv)
-		self.blink(handle_base,"red")
-		self.sss.say(["Here s your drink"])
-		self.sss.move("torso","nod")
-
-		if not self.sss.parse:
-			print "Press enter to return to station"
 		choice = self.sss.wait_for_input()
 
 		handle_base = self.sss.move("base","park",False)

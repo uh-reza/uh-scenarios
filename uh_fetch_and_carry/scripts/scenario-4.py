@@ -147,11 +147,13 @@ class FetchAndCarry(script):
 		self.blink(handle01,"yellow")
 		handle01.wait()
 
-		# P1
+		#handle_base = self.sss.move("base","home")
+		#self.blink(handle_base,"red")
+		# P4
 		tv = rospy.get_param("/script_server/base/tv")
-		tv[0] = tv[0] - 0.0 
-		tv[1] = tv[1] - 0.0
-		tv[2] = 2*3.1415926/4
+		tv[0] = tv[0] - 1.0 
+		tv[1] = tv[1] + 1.0
+		tv[2] = 0*3.1415926/4
 
 		# deliver cup to order position
 		handle_base = self.sss.move("base",tv)
@@ -163,8 +165,12 @@ class FetchAndCarry(script):
 			print "Press enter to return to station"
 		self.sss.wait_for_input()
 
+		#home = rospy.get_param("/script_server/base/home")
+		#home[2] = 4*3.1415926/4
+		self.sss.move("tray","down")
+		#handle_base = self.sss.move("base",home)
+		#self.blink(handle_base,"red")
 		handle_base = self.sss.move("base","park",False)
-		self.sss.move("tray","down",False)
 		self.blink(handle_base,"red")
 
 		self.sss.sleep(1)
