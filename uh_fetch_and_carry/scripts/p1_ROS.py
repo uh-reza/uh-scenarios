@@ -71,95 +71,44 @@ class FetchAndCarry(script):
 		self.sss.set_light("yellow")
 		self.sss.sleep(.5)
 		listener = tf.TransformListener(True, rospy.Duration(10.0))
-	
-		# going to sofa offering drink
-		#tv = rospy.get_param("/script_server/base/tv")
-		# P1
-		#tv[0] = tv[0] - 0.0 
-		#tv[1] = tv[1] - 0.0
-		#tv[2] = 2*3.1415926/4
-		# P2
-		#tv[0] = tv[0] - 0.0 
-		#tv[1] = tv[1] - 0.5
-		#tv[2] = 2*3.1415926/4
-		# P3
-		#tv[0] = tv[0] - 1.0 
-		#tv[1] = tv[1] - 0.0
-		#tv[2] = 3*3.1415926/4
-		# P4
-		#tv[0] = tv[0] - 1.0 
-		#tv[1] = tv[1] + 1.3
-		#tv[2] = 0*3.1415926/4
 
-		#shelf = rospy.get_param("/script_server/base/shelf")
-		#shelf[2] = 3.1415926
-		#handle_base = self.sss.move("base",shelf,False)
-		#self.blink(handle_base,"red")
-		
-		handle_base = self.sss.move("base","shelf",False)
+		handle_base = self.sss.move("base","park")
+
+		park = rospy.get_param("/script_server/base/park")
+		park[0] = park[0] + 0.45
+		park[1] = park[1] - 0.25
+		handle_base = self.sss.move("base",park,False)
 		self.blink(handle_base,"yellow")
-		handle_base = self.sss.move("base","shelf")
-		
+		handle_base.wait()
+
 		self.sss.set_light("red")
 		self.sss.sleep(.5)
 		handle_arm = self.sss.move("arm","pregrasp",False)
 		self.blink(handle_arm,"red")
 		handle_arm.wait()
 		
-		self.sss.set_light("red")
-		self.sss.sleep(.5)
-		handle_sdh = self.sss.move("sdh","cylopen")
-
-		# caculate tranformations, we need cup coordinates in arm_7_link coordinate system
-		cup = PointStamped()
-		cup.header.stamp = rospy.Time.now()
-		cup.header.frame_id = "/map"
-		cup.point.x = -1.6
-		cup.point.y = 1.0
-		cup.point.z = 0.86
-
-		self.sss.sleep(2) # wait for transform to be calculated
-		if not self.sss.parse:
-			cup = listener.transformPoint('/arm_7_link',cup)
-			# transform grasp point to sdh center
-			cup.point.z = cup.point.z + 0.2
-
-		# move in front of cup
-		pregrasp_distance = 0.2
-		self.sss.move_cart_rel("arm",[[cup.point.x, cup.point.y, cup.point.z+pregrasp_distance], [0, 0, 0]])
-
-		# move to cup
-		self.sss.move_cart_rel("arm",[[0.0, 0.0, -pregrasp_distance], [0, 0, 0]])
-		# grasp cup
-		self.sss.move("sdh","cylclosed")
-
-		# lift cup
-		self.sss.move_cart_rel("arm",[[0.0, 0.1, 0.0], [0, 0, 0]])
-
-		# place cup on tray
-		handle01 = self.sss.move("arm","grasp-to-tray",False)
-		self.sss.move("tray","up")
-		self.blink(handle01,"red")
-		handle01.wait()
-
-		self.sss.set_light("red")
-		self.sss.sleep(.5)
-		self.sss.move_cart_rel("arm",[[0.0, 0.0, -0.02], [0, 0, 0]])
-		self.sss.sleep(.5)
-
 		self.sss.move("sdh","cylopen")
 		self.sss.sleep(1)
 
-		self.sss.move_cart_rel("arm",[[0.0, 0.0, 0.22], [0, 0, 0]])
+		handle_arm = self.sss.move("arm","grasp",False)
+		self.blink(handle_arm,"red")
+		handle_arm.wait()
 
-		handle01 = self.sss.move("arm","tray-to-folded",False)
-		self.sss.sleep(4)
-		self.sss.move("sdh","cylclosed",False)
+		self.sss.set_light("red")
+		self.sss.sleep(.5)
+		self.sss.move("sdh","cylclosed")
+
+		self.sss.sleep(1)
+		handle01 = self.sss.move("arm","grasp-to-tray",False)
 		self.blink(handle01,"red")
 		handle01.wait()
 
 		self.sss.set_light("yellow")
 		self.sss.sleep(.5)
+		#park[2] = 0*3.1415926/4
+		#handle_base = self.sss.move("base",park,False)
+		#self.blink(handle_base,"yellow")
+		#handle_base.wait()
 
 		# deliver cup to order position
 		# P1
@@ -167,23 +116,42 @@ class FetchAndCarry(script):
 		tv[0] = tv[0] - 0.0 
 		tv[1] = tv[1] - 0.0
 		tv[2] = 2*3.1415926/4
-		handle_base = self.sss.move("base",tv)
+		handle_base = self.sss.move("base",tv,False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()
 
-		self.sss.move("torso","nod")
-		self.sss.sleep(.5)
+		self.sss.move("torso","nod",False)
 		self.sss.set_light("white")
 		self.sss.sleep(.5)
-		self.sss.say(["Here s your drink"])
+		self.sss.say(["Here s your cloth"])
 
 		if not self.sss.parse:
 			print "Press enter to return to station"
 		self.sss.wait_for_input()
 
+		self.sss.move("sdh","cylopen")
+		self.sss.sleep(1)
+		self.sss.move("sdh","cylclosed")
+
+		self.sss.set_light("yellow")
+		self.sss.sleep(1)
+
+		tv = rospy.get_param("/script_server/base/tv")
+		tv[0] = tv[0] - 0.9 
+		tv[1] = tv[1] - 0.0
+		tv[2] = 0*3.1415926/4
+		handle_base = self.sss.move("base",tv,False)
+		self.blink(handle_base,"yellow")
+		handle_base.wait()
+
+		self.sss.set_light("red")
+		self.sss.sleep(.5)
+		handle01 = self.sss.move("arm","tray-to-folded",False)
+		self.blink(handle01,"red")
+		handle01.wait()
+
 		self.sss.set_light("yellow")
 		self.sss.sleep(.5)
-		self.sss.move("tray","down",False)
 		handle_base = self.sss.move("base","park",False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()

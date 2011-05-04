@@ -19,11 +19,41 @@ class FetchAndCarry(script):
 
 	def Run(self):
 		self.sss.set_light("green")
-		self.sss.say(["Hello there, can I get you, anything to drink"])
-		self.sss.sleep(2)
+		self.sss.sleep(1)
+		self.sss.say(["Hello"])
+		if not self.sss.parse:
+			print "Press enter ...."
+		self.sss.wait_for_input()
 
-		self.sss.say(["Here s your drink"])
-		self.sss.sleep(.5)
+		self.sss.set_light("yellow")
+		self.sss.sleep(1)
+		self.sss.say(["Hello"])
+		if not self.sss.parse:
+			print "Press enter ...."
+		self.sss.wait_for_input()
+
+		self.sss.set_light("red")
+		self.sss.sleep(1)
+		self.sss.say(["Hello"])
+		if not self.sss.parse:
+			print "Press enter ...."
+		self.sss.wait_for_input()
+
+		self.sss.set_light("blue")
+		self.sss.sleep(1)
+		self.sss.say(["Hello"])
+		if not self.sss.parse:
+			print "Press enter ...."
+		self.sss.wait_for_input()
+
+		self.sss.set_light("white")
+		self.sss.sleep(1)
+		self.sss.say(["Hello"])
+		if not self.sss.parse:
+			print "Press enter ...."
+		self.sss.wait_for_input()
+
+		self.sss.say(["Thank you"])
 		self.sss.set_light([0,0,0])
 	 
 
