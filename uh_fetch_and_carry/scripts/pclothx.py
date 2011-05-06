@@ -11,6 +11,8 @@ from simple_script_server import script
 import tf
 from geometry_msgs.msg import *
 
+import sys  
+
 class FetchAndCarry(script):
 		
 	def Initialize(self):
@@ -60,104 +62,166 @@ class FetchAndCarry(script):
 			rospy.logerr("error in tray, aborting...")
 			return False
 
-		self.sss.set_light("white")
-		self.sss.sleep(.5)
-		# call for help to localize the base
-		if not self.sss.parse:
-			print "Please localize the robot with rviz"
-		self.sss.wait_for_input()
-		
 	def Run(self): 
-		self.sss.set_light("yellow")
-		self.sss.sleep(.5)
 		listener = tf.TransformListener(True, rospy.Duration(10.0))
-
-		handle_base = self.sss.move("base","park")
+		self.sss.sleep(2)
 
 		park = rospy.get_param("/script_server/base/park")
-		park[0] = park[0] + 0.25
-		park[1] = park[1] - 0.25
+		self.sss.sleep(1)
+
+		# express behaviour  
+		self.sss.set_light("white")
+		self.sss.sleep(.5)
+		self.sss.move("torso","nod")
+
+		# call to localize the base
+		if not self.sss.parse:
+			print " Localize the robot then enter: (1)-IPA (2)-ROS (0)-exit"
+		choice = self.sss.wait_for_input()
+
+		if choice == "1": 
+			park[0] = park[0] + 0.25
+			park[1] = park[1] - 0.25
+		elif choice == "2": 
+			park[0] = park[0] + 0.35
+			park[1] = park[1] - 0.25
+		else: 
+			self.sss.set_light([0,0,0])
+			self.sss.sleep(.5)
+			sys.exit("aborting ...")
+
+		# express behaviour  
+		self.sss.set_light("yellow")
+		self.sss.sleep(.5)
+
+		# move base   
+		self.sss.move("base","park")
 		handle_base = self.sss.move("base",park,False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()
 
+		# express behaviour  
 		self.sss.set_light("red")
 		self.sss.sleep(.5)
+
+		# move arm
 		handle_arm = self.sss.move("arm","pregrasp",False)
 		self.blink(handle_arm,"red")
 		handle_arm.wait()
 		
 		self.sss.move("sdh","cylopen")
-		self.sss.sleep(1)
+		self.sss.sleep(.5)
 
 		handle_arm = self.sss.move("arm","grasp",False)
 		self.blink(handle_arm,"red")
 		handle_arm.wait()
 
+		# express behaviour  
 		self.sss.set_light("red")
 		self.sss.sleep(.5)
+
 		self.sss.move("sdh","cylclosed")
+		self.sss.sleep(.5)
 
-		self.sss.sleep(1)
-		handle01 = self.sss.move("arm","grasp-to-tray",False)
-		self.blink(handle01,"red")
-		handle01.wait()
+		handle_arm = self.sss.move("arm","grasp-to-tray",False)
+		self.blink(handle_arm,"red")
+		handle_arm.wait()
 
+		# express behaviour  
 		self.sss.set_light("yellow")
 		self.sss.sleep(.5)
-		#park[2] = 0*3.1415926/4
-		#handle_base = self.sss.move("base",park,False)
-		#self.blink(handle_base,"yellow")
-		#handle_base.wait()
 
-		# deliver cup to order position
-		# P1
+		# move base   
+		park[2] = 0*3.1415926/4
+		handle_base = self.sss.move("base",park,False)
+		self.blink(handle_base,"yellow")
+		handle_base.wait()
+
+		# call to end point
 		tv = rospy.get_param("/script_server/base/tv")
-		tv[0] = tv[0] - 0.0 
-		tv[1] = tv[1] - 0.0
-		tv[2] = 2*3.1415926/4
+		self.sss.sleep(1)
+		if not self.sss.parse:
+			print " enter HRP point: (1)-P1 (2)-P2 (3)-P3 (4)-P4 (0)-exit"
+		choice = self.sss.wait_for_input()
+
+		if choice == "1": 
+			tv[0] = tv[0] - 0.0 
+			tv[1] = tv[1] - 0.0
+			tv[2] = 2*3.1415926/4
+		elif choice == "2": 
+			tv[0] = tv[0] - 0.0 
+			tv[1] = tv[1] - 0.0
+			tv[2] = 2*3.1415926/4
+		elif choice == "3": 
+			tv[0] = tv[0] - 0.0 
+			tv[1] = tv[1] - 0.0
+			tv[2] = 2*3.1415926/4
+		elif choice == "4": 
+			tv[0] = tv[0] - 0.0 
+			tv[1] = tv[1] - 0.0
+			tv[2] = 2*3.1415926/4
+		else: 
+			self.sss.set_light([0,0,0])
+			self.sss.sleep(.5)
+			sys.exit("aborting ...")
+
+		# move base   
 		handle_base = self.sss.move("base",tv,False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()
 
-		self.sss.move("torso","nod",False)
+		# express behaviour  
 		self.sss.set_light("white")
 		self.sss.sleep(.5)
-		self.sss.say(["Here s your cloth"])
+		self.sss.say(["Here is your cloth"])
+		self.sss.move("torso","nod")
 
+		# call to return to park
 		if not self.sss.parse:
-			print "Press enter to return to station"
+			print " Enter to continue ..."
 		self.sss.wait_for_input()
 
 		self.sss.move("sdh","cylopen")
-		self.sss.sleep(1)
+		self.sss.sleep(.5)
 		self.sss.move("sdh","cylclosed")
+		self.sss.sleep(.5)
 
+		# express behaviour  
 		self.sss.set_light("yellow")
-		self.sss.sleep(1)
+		self.sss.sleep(.5)
+		self.sss.move("torso","nod")
 
+		# move base   
 		tv = rospy.get_param("/script_server/base/tv")
 		tv[0] = tv[0] - 0.9 
-		tv[1] = tv[1] - 0.0
-		tv[2] = 0*3.1415926/4
+		tv[1] = tv[1] - 0.3
+		tv[2] = 4*3.1415926/4
 		handle_base = self.sss.move("base",tv,False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()
 
+		# express behaviour  
 		self.sss.set_light("red")
 		self.sss.sleep(.5)
-		handle01 = self.sss.move("arm","tray-to-folded",False)
-		self.blink(handle01,"red")
-		handle01.wait()
 
+		# move arm 
+		handle_arm = self.sss.move("arm","tray-to-folded",False)
+		self.blink(handle_arm,"red")
+		handle_arm.wait()
+
+		# express behaviour  
 		self.sss.set_light("yellow")
 		self.sss.sleep(.5)
+
+		# move base   
 		handle_base = self.sss.move("base","park",False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()
 
-		self.sss.sleep(.5)
+		# express behaviour  
 		self.sss.set_light([0,0,0])
+		self.sss.sleep(.5)
+		self.sss.move("torso","nod")
 
 	def blink(self, handle, color):
 		if not self.sss.parse:
