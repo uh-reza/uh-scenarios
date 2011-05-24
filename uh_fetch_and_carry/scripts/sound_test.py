@@ -27,14 +27,14 @@ class FetchAndCarry(script):
 
 		self.sss.set_light("yellow")
 		self.sss.sleep(1)
-		self.sss.say(["Hello"])
+		self.sss.say(["Heer is your drink"])
 		if not self.sss.parse:
 			print "Press enter ...."
 		self.sss.wait_for_input()
 
 		self.sss.set_light("red")
 		self.sss.sleep(1)
-		self.sss.say(["Hello"])
+		self.sss.say(["heer is your cloth"])
 		if not self.sss.parse:
 			print "Press enter ...."
 		self.sss.wait_for_input()
