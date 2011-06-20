@@ -88,8 +88,8 @@ class FetchAndCarry(script):
 		self.sss.move("base","park")
 		park = rospy.get_param("/script_server/base/park")
 		self.sss.sleep(.5)
-		park[0] = park[0] + 0.45 #0.50 #0.45
-		park[1] = park[1] - 0.25 #0.20 #0.25
+		park[0] = park[0] + 0.50 #0.45
+		park[1] = park[1] - 0.50 #0.25
 		handle_base = self.sss.move("base",park,False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()
@@ -103,19 +103,41 @@ class FetchAndCarry(script):
 		self.blink(handle_arm,"red")
 		handle_arm.wait()
 		
-		self.sss.move("sdh","cylopen")
-		self.sss.sleep(.5)
-
-		handle_arm = self.sss.move("arm","grasp",False)
-		self.blink(handle_arm,"red")
-		handle_arm.wait()
-
 		# express behaviour  
 		self.sss.set_light("red")
 		self.sss.sleep(.5)
 
-		self.sss.move("sdh","cylclosed")
+		self.sss.move("sdh","cylopen")
 		self.sss.sleep(.5)
+
+		# caculate tranformations, we need cup coordinates in arm_7_link coordinate system
+		cup = PointStamped()
+		cup.header.stamp = rospy.Time.now()
+		cup.header.frame_id = "/map"
+		cup.point.x = -.90 #-1.6
+		cup.point.y = 2.5 #1.0
+		cup.point.z = -0.5
+
+		self.sss.sleep(2) # wait for transform to be calculated
+		if not self.sss.parse:
+			cup = listener.transformPoint('/arm_7_link',cup)
+			# transform grasp point to sdh center
+			#cup.point.z = cup.point.z + 0.2
+
+		# move in front of cup
+		pregrasp_distance = 0.2
+		self.sss.move_cart_rel("arm",[[cup.point.x, cup.point.y, cup.point.z+pregrasp_distance], [0, 0, 0]])
+
+		# move to cup
+		self.sss.move_cart_rel("arm",[[0.0, 0.0, -pregrasp_distance], [0, 0, 0]])
+
+		# grasp cup
+		self.sss.move("sdh","cylclosed")
+
+		# move arm
+		handle_arm = self.sss.move("arm","pregrasp",False)
+		self.blink(handle_arm,"red")
+		handle_arm.wait()
 
 		handle_arm = self.sss.move("arm","grasp-to-tray",False)
 		self.blink(handle_arm,"red")
