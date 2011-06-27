@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-	<node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="_approximate_sync:=True">
-		    <remap from="stereo_image_proc/parameter_descriptions" to="parameter_descriptions" />
-		    <remap from="stereo_image_proc/parameter_updates" to="parameter_updates" />
-		  </node>
+
+  <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc" args="_approximate_sync:=True _queue_size:=15"/>
 
 </launch>
