@@ -9,23 +9,27 @@
 		<include file="$(find cob_light)/ros/launch/light.launch" />
 		<include file="$(find cob_sound)/ros/launch/sound.launch" />
 
+		<include file="$(find cob_camera_sensors)/ros/launch/left.launch" />
+		<!--include file="$(find cob_camera_sensors)/ros/launch/cam3d.launch" /-->
+		<include file="$(find cob_camera_sensors)/ros/launch/right.launch" />
+
 		<!-- The camera node -->
-		<node ns="stereo/right" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
+		<!--node ns="stereo/right" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
 			<param name="ip_address" type="str" value="169.254.47.10"/>
 			<param name="trigger_mode" type="str" value="streaming"/>
 			<remap from="camera/image_raw" to="image_raw"/>
 			<remap from="camera/camera_info" to="camera_info" />
 			<rosparam command="load" file="$(find uh_bringup)/common/cam_settings_master.yaml" />
-		</node>
+		</node-->
 
 		<!-- The camera node -->
-		<node ns="stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
+		<!--node ns="stereo/left" name="color_camera" pkg="prosilica_camera" type="prosilica_node" output="screen">
 			<param name="ip_address" type="str" value="169.254.236.139"/>
 			<param name="trigger_mode" type="str" value="streaming"/>
 			<remap from="camera/image_raw" to="image_raw"/>
 			<remap from="camera/camera_info" to="camera_info" />
 			<rosparam command="load" file="$(find uh_bringup)/common/cam_settings_slave.yaml" />
-		</node>
+		</node-->
 
 	</group>
 </launch>
