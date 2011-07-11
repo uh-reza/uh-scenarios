@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/git/people/people_msgs
+CMAKE_SOURCE_DIR = /home/reza/git/uh-scenarios/people/people_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/git/people/people_msgs/build
+CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/people/people_msgs/build
 
 # Utility rule file for ROSBUILD_genmsg_lisp.
 
@@ -80,9 +80,9 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_PositionMeasurement.li
 ../msg_gen/lisp/PositionMeasurement.lisp: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
 ../msg_gen/lisp/PositionMeasurement.lisp: /opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/srv_gen/generated
 ../msg_gen/lisp/PositionMeasurement.lisp: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/people_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/people_msgs/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/PositionMeasurement.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_PositionMeasurement.lisp"
-	/opt/ros/diamondback/stacks/ros_comm/clients/roslisp/scripts/genmsg_lisp.py /home/reza/git/people/people_msgs/msg/PositionMeasurement.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/roslisp/scripts/genmsg_lisp.py /home/reza/git/uh-scenarios/people/people_msgs/msg/PositionMeasurement.msg
 
 ../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/PositionMeasurement.lisp
 
@@ -104,6 +104,6 @@ CMakeFiles/ROSBUILD_genmsg_lisp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_lisp.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_lisp.dir/depend:
-	cd /home/reza/git/people/people_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/people/people_msgs /home/reza/git/people/people_msgs /home/reza/git/people/people_msgs/build /home/reza/git/people/people_msgs/build /home/reza/git/people/people_msgs/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/git/uh-scenarios/people/people_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/uh-scenarios/people/people_msgs /home/reza/git/uh-scenarios/people/people_msgs /home/reza/git/uh-scenarios/people/people_msgs/build /home/reza/git/uh-scenarios/people/people_msgs/build /home/reza/git/uh-scenarios/people/people_msgs/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_lisp.dir/depend
 

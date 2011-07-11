@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/git/people/face_detector
+CMAKE_SOURCE_DIR = /home/reza/git/uh-scenarios/people/face_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/git/people/face_detector/build
+CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/people/face_detector/build
 
 # Utility rule file for ROSBUILD_genmsg_py.
 
@@ -48,31 +48,13 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionResult.py
 ../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorFeedback.py
 ../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionFeedback.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionFeedback.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorAction.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorFeedback.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionGoal.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionResult.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorGoal.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorResult.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/__init__.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --initpy /home/reza/git/people/face_detector/msg/FaceDetectorAction.msg /home/reza/git/people/face_detector/msg/FaceDetectorGoal.msg /home/reza/git/people/face_detector/msg/FaceDetectorActionGoal.msg /home/reza/git/people/face_detector/msg/FaceDetectorResult.msg /home/reza/git/people/face_detector/msg/FaceDetectorActionResult.msg /home/reza/git/people/face_detector/msg/FaceDetectorFeedback.msg /home/reza/git/people/face_detector/msg/FaceDetectorActionFeedback.msg /home/reza/git/people/face_detector/msg/FaceDetectorActionFeedback.msg /home/reza/git/people/face_detector/msg/FaceDetectorAction.msg /home/reza/git/people/face_detector/msg/FaceDetectorFeedback.msg /home/reza/git/people/face_detector/msg/FaceDetectorActionGoal.msg /home/reza/git/people/face_detector/msg/FaceDetectorActionResult.msg /home/reza/git/people/face_detector/msg/FaceDetectorGoal.msg /home/reza/git/people/face_detector/msg/FaceDetectorResult.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --initpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorAction.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionFeedback.msg
 
 ../src/face_detector/msg/_FaceDetectorAction.py: ../msg/FaceDetectorAction.msg
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/ros/core/roslib/scripts/gendeps
-../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg/GoalID.msg
-../src/face_detector/msg/_FaceDetectorAction.py: ../msg/FaceDetectorActionResult.msg
-../src/face_detector/msg/_FaceDetectorAction.py: ../msg/FaceDetectorResult.msg
-../src/face_detector/msg/_FaceDetectorAction.py: /home/reza/git/people/people_msgs/msg/PositionMeasurement.msg
-../src/face_detector/msg/_FaceDetectorAction.py: ../msg/FaceDetectorActionGoal.msg
-../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg/Header.msg
-../src/face_detector/msg/_FaceDetectorAction.py: ../msg/FaceDetectorFeedback.msg
-../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg/GoalStatus.msg
-../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg/Point.msg
-../src/face_detector/msg/_FaceDetectorAction.py: ../msg/FaceDetectorActionFeedback.msg
-../src/face_detector/msg/_FaceDetectorAction.py: ../msg/FaceDetectorGoal.msg
 ../src/face_detector/msg/_FaceDetectorAction.py: ../manifest.xml
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/ros/core/roslang/manifest.xml
@@ -117,7 +99,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-../src/face_detector/msg/_FaceDetectorAction.py: /home/reza/git/people/people_msgs/manifest.xml
+../src/face_detector/msg/_FaceDetectorAction.py: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -133,12 +115,12 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-../src/face_detector/msg/_FaceDetectorAction.py: /home/reza/git/people/people_msgs/msg_gen/generated
+../src/face_detector/msg/_FaceDetectorAction.py: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/_FaceDetectorAction.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/people/face_detector/msg/FaceDetectorAction.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorAction.msg
 
 ../src/face_detector/msg/_FaceDetectorGoal.py: ../msg/FaceDetectorGoal.msg
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
@@ -187,7 +169,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-../src/face_detector/msg/_FaceDetectorGoal.py: /home/reza/git/people/people_msgs/manifest.xml
+../src/face_detector/msg/_FaceDetectorGoal.py: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -203,19 +185,16 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-../src/face_detector/msg/_FaceDetectorGoal.py: /home/reza/git/people/people_msgs/msg_gen/generated
+../src/face_detector/msg/_FaceDetectorGoal.py: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorGoal.py: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/_FaceDetectorGoal.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/people/face_detector/msg/FaceDetectorGoal.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorGoal.msg
 
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: ../msg/FaceDetectorActionGoal.msg
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/ros/core/roslib/scripts/gendeps
-../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg/GoalID.msg
-../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg/Header.msg
-../src/face_detector/msg/_FaceDetectorActionGoal.py: ../msg/FaceDetectorGoal.msg
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: ../manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/ros/core/roslang/manifest.xml
@@ -260,7 +239,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-../src/face_detector/msg/_FaceDetectorActionGoal.py: /home/reza/git/people/people_msgs/manifest.xml
+../src/face_detector/msg/_FaceDetectorActionGoal.py: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -276,19 +255,16 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-../src/face_detector/msg/_FaceDetectorActionGoal.py: /home/reza/git/people/people_msgs/msg_gen/generated
+../src/face_detector/msg/_FaceDetectorActionGoal.py: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionGoal.py: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/_FaceDetectorActionGoal.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/people/face_detector/msg/FaceDetectorActionGoal.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionGoal.msg
 
 ../src/face_detector/msg/_FaceDetectorResult.py: ../msg/FaceDetectorResult.msg
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/ros/core/roslib/scripts/gendeps
-../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg/Header.msg
-../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg/Point.msg
-../src/face_detector/msg/_FaceDetectorResult.py: /home/reza/git/people/people_msgs/msg/PositionMeasurement.msg
 ../src/face_detector/msg/_FaceDetectorResult.py: ../manifest.xml
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/ros/core/roslang/manifest.xml
@@ -333,7 +309,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-../src/face_detector/msg/_FaceDetectorResult.py: /home/reza/git/people/people_msgs/manifest.xml
+../src/face_detector/msg/_FaceDetectorResult.py: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -349,22 +325,16 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-../src/face_detector/msg/_FaceDetectorResult.py: /home/reza/git/people/people_msgs/msg_gen/generated
+../src/face_detector/msg/_FaceDetectorResult.py: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorResult.py: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/_FaceDetectorResult.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/people/face_detector/msg/FaceDetectorResult.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorResult.msg
 
 ../src/face_detector/msg/_FaceDetectorActionResult.py: ../msg/FaceDetectorActionResult.msg
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/ros/core/roslib/scripts/gendeps
-../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg/GoalID.msg
-../src/face_detector/msg/_FaceDetectorActionResult.py: ../msg/FaceDetectorResult.msg
-../src/face_detector/msg/_FaceDetectorActionResult.py: /home/reza/git/people/people_msgs/msg/PositionMeasurement.msg
-../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg/Header.msg
-../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg/Point.msg
-../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg/GoalStatus.msg
 ../src/face_detector/msg/_FaceDetectorActionResult.py: ../manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/ros/core/roslang/manifest.xml
@@ -409,7 +379,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-../src/face_detector/msg/_FaceDetectorActionResult.py: /home/reza/git/people/people_msgs/manifest.xml
+../src/face_detector/msg/_FaceDetectorActionResult.py: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -425,12 +395,12 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-../src/face_detector/msg/_FaceDetectorActionResult.py: /home/reza/git/people/people_msgs/msg_gen/generated
+../src/face_detector/msg/_FaceDetectorActionResult.py: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionResult.py: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/_FaceDetectorActionResult.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/people/face_detector/msg/FaceDetectorActionResult.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionResult.msg
 
 ../src/face_detector/msg/_FaceDetectorFeedback.py: ../msg/FaceDetectorFeedback.msg
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
@@ -479,7 +449,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-../src/face_detector/msg/_FaceDetectorFeedback.py: /home/reza/git/people/people_msgs/manifest.xml
+../src/face_detector/msg/_FaceDetectorFeedback.py: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -495,20 +465,16 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-../src/face_detector/msg/_FaceDetectorFeedback.py: /home/reza/git/people/people_msgs/msg_gen/generated
+../src/face_detector/msg/_FaceDetectorFeedback.py: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorFeedback.py: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/_FaceDetectorFeedback.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/people/face_detector/msg/FaceDetectorFeedback.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorFeedback.msg
 
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: ../msg/FaceDetectorActionFeedback.msg
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/ros/core/roslib/scripts/gendeps
-../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg/GoalID.msg
-../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg/Header.msg
-../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg/GoalStatus.msg
-../src/face_detector/msg/_FaceDetectorActionFeedback.py: ../msg/FaceDetectorFeedback.msg
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: ../manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/ros/core/roslang/manifest.xml
@@ -553,7 +519,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-../src/face_detector/msg/_FaceDetectorActionFeedback.py: /home/reza/git/people/people_msgs/manifest.xml
+../src/face_detector/msg/_FaceDetectorActionFeedback.py: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -569,18 +535,18 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-../src/face_detector/msg/_FaceDetectorActionFeedback.py: /home/reza/git/people/people_msgs/msg_gen/generated
+../src/face_detector/msg/_FaceDetectorActionFeedback.py: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 ../src/face_detector/msg/_FaceDetectorActionFeedback.py: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/_FaceDetectorActionFeedback.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/people/face_detector/msg/FaceDetectorActionFeedback.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionFeedback.msg
 
 ../msg/FaceDetectorAction.msg: ../action/FaceDetector.action
 ../msg/FaceDetectorAction.msg: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/genaction.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg/FaceDetectorAction.msg, ../msg/FaceDetectorGoal.msg, ../msg/FaceDetectorActionGoal.msg, ../msg/FaceDetectorResult.msg, ../msg/FaceDetectorActionResult.msg, ../msg/FaceDetectorFeedback.msg, ../msg/FaceDetectorActionFeedback.msg"
-	/opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/genaction.py /home/reza/git/people/face_detector FaceDetector.action
+	/opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/genaction.py /home/reza/git/uh-scenarios/people/face_detector FaceDetector.action
 
 ../msg/FaceDetectorGoal.msg: ../msg/FaceDetectorAction.msg
 
@@ -622,6 +588,6 @@ CMakeFiles/ROSBUILD_genmsg_py.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_py.dir/depend:
-	cd /home/reza/git/people/face_detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/people/face_detector /home/reza/git/people/face_detector /home/reza/git/people/face_detector/build /home/reza/git/people/face_detector/build /home/reza/git/people/face_detector/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/git/uh-scenarios/people/face_detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/uh-scenarios/people/face_detector /home/reza/git/uh-scenarios/people/face_detector /home/reza/git/uh-scenarios/people/face_detector/build /home/reza/git/uh-scenarios/people/face_detector/build /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/depend
 

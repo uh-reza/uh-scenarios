@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/git/people/face_detector
+CMAKE_SOURCE_DIR = /home/reza/git/uh-scenarios/people/face_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/git/people/face_detector/build
+CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/people/face_detector/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/git/people/face_detector/build/CMakeFiles /home/reza/git/people/face_detector/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/git/people/face_detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -187,32 +187,6 @@ clean-test-results/fast:
 .PHONY : clean-test-results/fast
 
 #=============================================================================
-# Target rules for targets named download_data_face_detector_noface_test.bag
-
-# Build rule for target.
-download_data_face_detector_noface_test.bag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 download_data_face_detector_noface_test.bag
-.PHONY : download_data_face_detector_noface_test.bag
-
-# fast build rule for target.
-download_data_face_detector_noface_test.bag/fast:
-	$(MAKE) -f CMakeFiles/download_data_face_detector_noface_test.bag.dir/build.make CMakeFiles/download_data_face_detector_noface_test.bag.dir/build
-.PHONY : download_data_face_detector_noface_test.bag/fast
-
-#=============================================================================
-# Target rules for targets named download_data_face_detector_withface_test.bag
-
-# Build rule for target.
-download_data_face_detector_withface_test.bag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 download_data_face_detector_withface_test.bag
-.PHONY : download_data_face_detector_withface_test.bag
-
-# fast build rule for target.
-download_data_face_detector_withface_test.bag/fast:
-	$(MAKE) -f CMakeFiles/download_data_face_detector_withface_test.bag.dir/build.make CMakeFiles/download_data_face_detector_withface_test.bag.dir/build
-.PHONY : download_data_face_detector_withface_test.bag/fast
-
-#=============================================================================
 # Target rules for targets named face_detector
 
 # Build rule for target.
@@ -302,58 +276,6 @@ rospack_gensrv: cmake_check_build_system
 rospack_gensrv/fast:
 	$(MAKE) -f CMakeFiles/rospack_gensrv.dir/build.make CMakeFiles/rospack_gensrv.dir/build
 .PHONY : rospack_gensrv/fast
-
-#=============================================================================
-# Target rules for targets named rostest_test_face_detector_false_rtest.xml
-
-# Build rule for target.
-rostest_test_face_detector_false_rtest.xml: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rostest_test_face_detector_false_rtest.xml
-.PHONY : rostest_test_face_detector_false_rtest.xml
-
-# fast build rule for target.
-rostest_test_face_detector_false_rtest.xml/fast:
-	$(MAKE) -f CMakeFiles/rostest_test_face_detector_false_rtest.xml.dir/build.make CMakeFiles/rostest_test_face_detector_false_rtest.xml.dir/build
-.PHONY : rostest_test_face_detector_false_rtest.xml/fast
-
-#=============================================================================
-# Target rules for targets named rostest_test_face_detector_false_rtest.xml_result
-
-# Build rule for target.
-rostest_test_face_detector_false_rtest.xml_result: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rostest_test_face_detector_false_rtest.xml_result
-.PHONY : rostest_test_face_detector_false_rtest.xml_result
-
-# fast build rule for target.
-rostest_test_face_detector_false_rtest.xml_result/fast:
-	$(MAKE) -f CMakeFiles/rostest_test_face_detector_false_rtest.xml_result.dir/build.make CMakeFiles/rostest_test_face_detector_false_rtest.xml_result.dir/build
-.PHONY : rostest_test_face_detector_false_rtest.xml_result/fast
-
-#=============================================================================
-# Target rules for targets named rostest_test_face_detector_true_rtest.xml
-
-# Build rule for target.
-rostest_test_face_detector_true_rtest.xml: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rostest_test_face_detector_true_rtest.xml
-.PHONY : rostest_test_face_detector_true_rtest.xml
-
-# fast build rule for target.
-rostest_test_face_detector_true_rtest.xml/fast:
-	$(MAKE) -f CMakeFiles/rostest_test_face_detector_true_rtest.xml.dir/build.make CMakeFiles/rostest_test_face_detector_true_rtest.xml.dir/build
-.PHONY : rostest_test_face_detector_true_rtest.xml/fast
-
-#=============================================================================
-# Target rules for targets named rostest_test_face_detector_true_rtest.xml_result
-
-# Build rule for target.
-rostest_test_face_detector_true_rtest.xml_result: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rostest_test_face_detector_true_rtest.xml_result
-.PHONY : rostest_test_face_detector_true_rtest.xml_result
-
-# fast build rule for target.
-rostest_test_face_detector_true_rtest.xml_result/fast:
-	$(MAKE) -f CMakeFiles/rostest_test_face_detector_true_rtest.xml_result.dir/build.make CMakeFiles/rostest_test_face_detector_true_rtest.xml_result.dir/build
-.PHONY : rostest_test_face_detector_true_rtest.xml_result/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -463,8 +385,6 @@ help:
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
 	@echo "... clean-test-results"
-	@echo "... download_data_face_detector_noface_test.bag"
-	@echo "... download_data_face_detector_withface_test.bag"
 	@echo "... edit_cache"
 	@echo "... face_detector"
 	@echo "... rebuild_cache"
@@ -474,10 +394,6 @@ help:
 	@echo "... rospack_genmsg_all"
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
-	@echo "... rostest_test_face_detector_false_rtest.xml"
-	@echo "... rostest_test_face_detector_false_rtest.xml_result"
-	@echo "... rostest_test_face_detector_true_rtest.xml"
-	@echo "... rostest_test_face_detector_true_rtest.xml_result"
 	@echo "... test"
 	@echo "... test-future"
 	@echo "... test-results"

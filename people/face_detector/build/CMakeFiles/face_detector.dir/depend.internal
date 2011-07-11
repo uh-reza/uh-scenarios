@@ -10,8 +10,8 @@ CMakeFiles/face_detector.dir/src/face_detection.o
  ../msg_gen/cpp/include/face_detector/FaceDetectorFeedback.h
  ../msg_gen/cpp/include/face_detector/FaceDetectorGoal.h
  ../msg_gen/cpp/include/face_detector/FaceDetectorResult.h
- /home/reza/git/people/face_detector/src/face_detection.cpp
- /home/reza/git/people/people_msgs/msg_gen/cpp/include/people_msgs/PositionMeasurement.h
+ /home/reza/git/uh-scenarios/people/face_detector/src/face_detection.cpp
+ /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/cpp/include/people_msgs/PositionMeasurement.h
  /opt/ros/diamondback/stacks/common/actionlib/include/actionlib/action_definition.h
  /opt/ros/diamondback/stacks/common/actionlib/include/actionlib/destruction_guard.h
  /opt/ros/diamondback/stacks/common/actionlib/include/actionlib/enclosure_deleter.h
@@ -193,7 +193,7 @@ CMakeFiles/face_detector.dir/src/face_detection.o
  /opt/ros/diamondback/stacks/vision_opencv/opencv2/opencv/include/opencv2/video/tracking.hpp
 CMakeFiles/face_detector.dir/src/faces.o
  ../include/face_detector/faces.h
- /home/reza/git/people/face_detector/src/faces.cpp
+ /home/reza/git/uh-scenarios/people/face_detector/src/faces.cpp
  /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/msg_gen/cpp/include/sensor_msgs/CameraInfo.h
  /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/msg_gen/cpp/include/sensor_msgs/RegionOfInterest.h
  /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/include/ros/message.h

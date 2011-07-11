@@ -12,8 +12,8 @@ SET(CMAKE_FORCE_UNIX_PATHS 1)
 SET(CMAKE_C_INCLUDE_PATH
   "../include"
   "/home/reza/git/care-o-bot/cob_driver/cob_camera_sensors/common/include"
-  "/home/reza/git/prosilica_camera/include"
-  "/home/reza/git/prosilica_camera/srv/cpp"
+  "/opt/ros/diamondback/stacks/camera_drivers/prosilica_camera/include"
+  "/opt/ros/diamondback/stacks/camera_drivers/prosilica_camera/srv/cpp"
   "/opt/ros/diamondback/stacks/camera_drivers/prosilica_gige_sdk/include"
   "/opt/ros/diamondback/stacks/openni_kinect/openni_camera/include"
   "/usr/include/openni"
@@ -247,13 +247,13 @@ SET(CMAKE_C_INCLUDE_PATH
   "/opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/include"
   "/opt/ros/diamondback/stacks/ros_comm/utilities/rostime/include"
   "/opt/ros/diamondback/stacks/ros_comm/utilities/cpp_common/include"
+  "/opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/cpp/include"
   "/opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/include"
   "/opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/cpp/include"
   "/opt/ros/diamondback/ros/core/roslib/msg_gen/cpp/include"
   "/opt/ros/diamondback/ros/core/roslib/include"
   "/opt/ros/diamondback/ros/tools/rospack"
   "/opt/ros/diamondback/ros/tools/rospack/include"
-  "/opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/cpp/include"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

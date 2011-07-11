@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/git/people/people_msgs
+CMAKE_SOURCE_DIR = /home/reza/git/uh-scenarios/people/people_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/git/people/people_msgs/build
+CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/people/people_msgs/build
 
 # Utility rule file for ROSBUILD_gensrv_lisp.
 
@@ -54,6 +54,6 @@ CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean
 
 CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend:
-	cd /home/reza/git/people/people_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/people/people_msgs /home/reza/git/people/people_msgs /home/reza/git/people/people_msgs/build /home/reza/git/people/people_msgs/build /home/reza/git/people/people_msgs/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/git/uh-scenarios/people/people_msgs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/uh-scenarios/people/people_msgs /home/reza/git/uh-scenarios/people/people_msgs /home/reza/git/uh-scenarios/people/people_msgs/build /home/reza/git/uh-scenarios/people/people_msgs/build /home/reza/git/uh-scenarios/people/people_msgs/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gensrv_lisp.dir/depend
 

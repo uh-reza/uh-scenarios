@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/git/pi_vision/pi_face_tracker
+CMAKE_SOURCE_DIR = /home/reza/git/uh-scenarios/pi_vision/pi_face_tracker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/git/pi_vision/pi_face_tracker/build
+CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/pi_vision/pi_face_tracker/build
 
 # Utility rule file for rosbuild_precompile.
 
@@ -54,6 +54,6 @@ CMakeFiles/rosbuild_precompile.dir/clean:
 .PHONY : CMakeFiles/rosbuild_precompile.dir/clean
 
 CMakeFiles/rosbuild_precompile.dir/depend:
-	cd /home/reza/git/pi_vision/pi_face_tracker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/pi_vision/pi_face_tracker /home/reza/git/pi_vision/pi_face_tracker /home/reza/git/pi_vision/pi_face_tracker/build /home/reza/git/pi_vision/pi_face_tracker/build /home/reza/git/pi_vision/pi_face_tracker/build/CMakeFiles/rosbuild_precompile.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/git/uh-scenarios/pi_vision/pi_face_tracker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/uh-scenarios/pi_vision/pi_face_tracker /home/reza/git/uh-scenarios/pi_vision/pi_face_tracker /home/reza/git/uh-scenarios/pi_vision/pi_face_tracker/build /home/reza/git/uh-scenarios/pi_vision/pi_face_tracker/build /home/reza/git/uh-scenarios/pi_vision/pi_face_tracker/build/CMakeFiles/rosbuild_precompile.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rosbuild_precompile.dir/depend
 

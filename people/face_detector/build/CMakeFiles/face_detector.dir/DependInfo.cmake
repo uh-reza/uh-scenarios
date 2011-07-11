@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/reza/git/people/face_detector/src/face_detection.cpp" "/home/reza/git/people/face_detector/build/CMakeFiles/face_detector.dir/src/face_detection.o"
-  "/home/reza/git/people/face_detector/src/faces.cpp" "/home/reza/git/people/face_detector/build/CMakeFiles/face_detector.dir/src/faces.o"
+  "/home/reza/git/uh-scenarios/people/face_detector/src/face_detection.cpp" "/home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles/face_detector.dir/src/face_detection.o"
+  "/home/reza/git/uh-scenarios/people/face_detector/src/faces.cpp" "/home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles/face_detector.dir/src/faces.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

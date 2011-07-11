@@ -10,7 +10,7 @@ CMakeFiles/face_detector.dir/src/face_detection.o: ../msg_gen/cpp/include/face_d
 CMakeFiles/face_detector.dir/src/face_detection.o: ../msg_gen/cpp/include/face_detector/FaceDetectorGoal.h
 CMakeFiles/face_detector.dir/src/face_detection.o: ../msg_gen/cpp/include/face_detector/FaceDetectorResult.h
 CMakeFiles/face_detector.dir/src/face_detection.o: ../src/face_detection.cpp
-CMakeFiles/face_detector.dir/src/face_detection.o: /home/reza/git/people/people_msgs/msg_gen/cpp/include/people_msgs/PositionMeasurement.h
+CMakeFiles/face_detector.dir/src/face_detection.o: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/cpp/include/people_msgs/PositionMeasurement.h
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common/actionlib/include/actionlib/action_definition.h
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common/actionlib/include/actionlib/destruction_guard.h
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common/actionlib/include/actionlib/enclosure_deleter.h

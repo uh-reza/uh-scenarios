@@ -171,7 +171,7 @@ public:
     local_nh.param("classifier_name",name_,std::string(""));
     local_nh.param("classifier_filename",haar_filename_,std::string(""));
     local_nh.param("classifier_reliability",reliability_,0.0);
-    local_nh.param("do_display",do_display_,std::string("none"));
+    local_nh.param("do_display",do_display_,std::string("local"));
     local_nh.param("do_continuous",do_continuous_,true);
     local_nh.param("do_publish_faces_of_unknown_size",do_publish_unknown_,false);
     local_nh.param("use_depth",use_depth_,true);

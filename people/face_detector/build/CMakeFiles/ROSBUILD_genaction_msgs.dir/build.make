@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/git/people/face_detector
+CMAKE_SOURCE_DIR = /home/reza/git/uh-scenarios/people/face_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/git/people/face_detector/build
+CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/people/face_detector/build
 
 # Utility rule file for ROSBUILD_genaction_msgs.
 
@@ -49,9 +49,9 @@ CMakeFiles/ROSBUILD_genaction_msgs: ../msg/FaceDetectorActionFeedback.msg
 
 ../msg/FaceDetectorAction.msg: ../action/FaceDetector.action
 ../msg/FaceDetectorAction.msg: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/genaction.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg/FaceDetectorAction.msg, ../msg/FaceDetectorGoal.msg, ../msg/FaceDetectorActionGoal.msg, ../msg/FaceDetectorResult.msg, ../msg/FaceDetectorActionResult.msg, ../msg/FaceDetectorFeedback.msg, ../msg/FaceDetectorActionFeedback.msg"
-	/opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/genaction.py /home/reza/git/people/face_detector FaceDetector.action
+	/opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/genaction.py /home/reza/git/uh-scenarios/people/face_detector FaceDetector.action
 
 ../msg/FaceDetectorGoal.msg: ../msg/FaceDetectorAction.msg
 
@@ -85,6 +85,6 @@ CMakeFiles/ROSBUILD_genaction_msgs.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genaction_msgs.dir/clean
 
 CMakeFiles/ROSBUILD_genaction_msgs.dir/depend:
-	cd /home/reza/git/people/face_detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/people/face_detector /home/reza/git/people/face_detector /home/reza/git/people/face_detector/build /home/reza/git/people/face_detector/build /home/reza/git/people/face_detector/build/CMakeFiles/ROSBUILD_genaction_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/git/uh-scenarios/people/face_detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/uh-scenarios/people/face_detector /home/reza/git/uh-scenarios/people/face_detector /home/reza/git/uh-scenarios/people/face_detector/build /home/reza/git/uh-scenarios/people/face_detector/build /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles/ROSBUILD_genaction_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genaction_msgs.dir/depend
 

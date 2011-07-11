@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/git/people/face_detector
+CMAKE_SOURCE_DIR = /home/reza/git/uh-scenarios/people/face_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/git/people/face_detector/build
+CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/people/face_detector/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/face_detector.dir/depend.make
@@ -92,7 +92,7 @@ CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/r
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-CMakeFiles/face_detector.dir/src/face_detection.o: /home/reza/git/people/people_msgs/manifest.xml
+CMakeFiles/face_detector.dir/src/face_detection.o: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -108,20 +108,20 @@ CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/c
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-CMakeFiles/face_detector.dir/src/face_detection.o: /home/reza/git/people/people_msgs/msg_gen/generated
+CMakeFiles/face_detector.dir/src/face_detection.o: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 CMakeFiles/face_detector.dir/src/face_detection.o: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/face_detector.dir/src/face_detection.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/face_detector.dir/src/face_detection.o -c /home/reza/git/people/face_detector/src/face_detection.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/face_detector.dir/src/face_detection.o -c /home/reza/git/uh-scenarios/people/face_detector/src/face_detection.cpp
 
 CMakeFiles/face_detector.dir/src/face_detection.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/face_detector.dir/src/face_detection.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/reza/git/people/face_detector/src/face_detection.cpp > CMakeFiles/face_detector.dir/src/face_detection.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/reza/git/uh-scenarios/people/face_detector/src/face_detection.cpp > CMakeFiles/face_detector.dir/src/face_detection.i
 
 CMakeFiles/face_detector.dir/src/face_detection.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/face_detector.dir/src/face_detection.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/reza/git/people/face_detector/src/face_detection.cpp -o CMakeFiles/face_detector.dir/src/face_detection.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/reza/git/uh-scenarios/people/face_detector/src/face_detection.cpp -o CMakeFiles/face_detector.dir/src/face_detection.s
 
 CMakeFiles/face_detector.dir/src/face_detection.o.requires:
 .PHONY : CMakeFiles/face_detector.dir/src/face_detection.o.requires
@@ -179,7 +179,7 @@ CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/ros_comm/t
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-CMakeFiles/face_detector.dir/src/faces.o: /home/reza/git/people/people_msgs/manifest.xml
+CMakeFiles/face_detector.dir/src/faces.o: /home/reza/git/uh-scenarios/people/people_msgs/manifest.xml
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/vision_opencv/image_geometry/manifest.xml
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/manifest.xml
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/common/actionlib/manifest.xml
@@ -195,20 +195,20 @@ CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/common_msg
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/common_msgs/stereo_msgs/msg_gen/generated
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
-CMakeFiles/face_detector.dir/src/faces.o: /home/reza/git/people/people_msgs/msg_gen/generated
+CMakeFiles/face_detector.dir/src/faces.o: /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/generated
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/common_msgs/actionlib_msgs/msg_gen/generated
 CMakeFiles/face_detector.dir/src/faces.o: /opt/ros/diamondback/stacks/common/actionlib/msg_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/face_detector.dir/src/faces.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/face_detector.dir/src/faces.o -c /home/reza/git/people/face_detector/src/faces.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/face_detector.dir/src/faces.o -c /home/reza/git/uh-scenarios/people/face_detector/src/faces.cpp
 
 CMakeFiles/face_detector.dir/src/faces.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/face_detector.dir/src/faces.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/reza/git/people/face_detector/src/faces.cpp > CMakeFiles/face_detector.dir/src/faces.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/reza/git/uh-scenarios/people/face_detector/src/faces.cpp > CMakeFiles/face_detector.dir/src/faces.i
 
 CMakeFiles/face_detector.dir/src/faces.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/face_detector.dir/src/faces.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/reza/git/people/face_detector/src/faces.cpp -o CMakeFiles/face_detector.dir/src/faces.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DTIXML_USE_STL -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/reza/git/uh-scenarios/people/face_detector/src/faces.cpp -o CMakeFiles/face_detector.dir/src/faces.s
 
 CMakeFiles/face_detector.dir/src/faces.o.requires:
 .PHONY : CMakeFiles/face_detector.dir/src/faces.o.requires
@@ -249,6 +249,6 @@ CMakeFiles/face_detector.dir/clean:
 .PHONY : CMakeFiles/face_detector.dir/clean
 
 CMakeFiles/face_detector.dir/depend:
-	cd /home/reza/git/people/face_detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/people/face_detector /home/reza/git/people/face_detector /home/reza/git/people/face_detector/build /home/reza/git/people/face_detector/build /home/reza/git/people/face_detector/build/CMakeFiles/face_detector.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/git/uh-scenarios/people/face_detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/git/uh-scenarios/people/face_detector /home/reza/git/uh-scenarios/people/face_detector /home/reza/git/uh-scenarios/people/face_detector/build /home/reza/git/uh-scenarios/people/face_detector/build /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles/face_detector.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/face_detector.dir/depend
 
