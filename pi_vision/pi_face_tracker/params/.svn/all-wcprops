@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/464/trunk/pi_vision/pi_face_tracker/params
+END
+haarcascade_frontalface_alt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/464/trunk/pi_vision/pi_face_tracker/params/haarcascade_frontalface_alt.xml
+END
+haarcascade_frontalface_alt2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/464/trunk/pi_vision/pi_face_tracker/params/haarcascade_frontalface_alt2.xml
+END
+haarcascade_profileface.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/464/trunk/pi_vision/pi_face_tracker/params/haarcascade_profileface.xml
+END

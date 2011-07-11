@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/515/trunk/pi_vision/pi_face_tracker/launch
+END
+face_tracker_uvc_cam.launch
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/492/trunk/pi_vision/pi_face_tracker/launch/face_tracker_uvc_cam.launch
+END
+face_tracker_kinect.launch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/495/trunk/pi_vision/pi_face_tracker/launch/face_tracker_kinect.launch
+END
+patch_tracker_video.launch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/515/trunk/pi_vision/pi_face_tracker/launch/patch_tracker_video.launch
+END

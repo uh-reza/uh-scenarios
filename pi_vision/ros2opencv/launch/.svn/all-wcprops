@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/515/trunk/pi_vision/ros2opencv/launch
+END
+openni_node.launch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/464/trunk/pi_vision/ros2opencv/launch/openni_node.launch
+END
+uvc_cam.launch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/464/trunk/pi_vision/ros2opencv/launch/uvc_cam.launch
+END
+ros2opencv_kinect.launch
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/464/trunk/pi_vision/ros2opencv/launch/ros2opencv_kinect.launch
+END
+avi2ros.launch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/515/trunk/pi_vision/ros2opencv/launch/avi2ros.launch
+END
