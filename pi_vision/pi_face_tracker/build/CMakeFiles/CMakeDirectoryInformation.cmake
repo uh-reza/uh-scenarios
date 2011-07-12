@@ -12,7 +12,7 @@ SET(CMAKE_FORCE_UNIX_PATHS 1)
 SET(CMAKE_C_INCLUDE_PATH
   "../include"
   "/opt/ros/diamondback/stacks/openni_kinect/openni_camera/include"
-  "/home/reza/git/uh-scenarios/uvc_cam/include"
+  "/home/reza/git/uvc_cam/include"
   "/opt/ros/diamondback/stacks/vision_opencv/cv_bridge/include"
   "/opt/ros/diamondback/stacks/vision_opencv/opencv2/opencv/include"
   "/opt/ros/diamondback/stacks/vision_opencv/opencv2/opencv/include/opencv"

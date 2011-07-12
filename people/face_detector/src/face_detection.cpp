@@ -468,7 +468,7 @@ public:
     if (do_display_ == "local") {
 
       cv::imshow("Face detector: Face Detection",cv_image_out_);
-      cv::waitKey(2);
+      cv::waitKey(20);
  
       cv_mutex_.unlock();
     }

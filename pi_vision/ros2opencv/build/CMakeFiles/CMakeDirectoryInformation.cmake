@@ -31,7 +31,7 @@ SET(CMAKE_C_INCLUDE_PATH
   "/opt/ros/diamondback/stacks/geometry/eigen/include"
   "/opt/ros/diamondback/stacks/perception_pcl/cminpack/include"
   "/opt/ros/diamondback/stacks/perception_pcl/flann/include"
-  "/home/reza/git/uh-scenarios/uvc_cam/include"
+  "/home/reza/git/uvc_cam/include"
   "/opt/ros/diamondback/stacks/image_common/image_transport/include"
   "/opt/ros/diamondback/stacks/common/pluginlib/include"
   "/opt/ros/diamondback/stacks/common/pluginlib"
