@@ -146,18 +146,12 @@ public:
   FaceDetector(std::string name) : 
     BIGDIST_M(1000000.0),
     it_(nh_),
-    sync_(4),
-    as_(nh_,name),
+    sync_(0),
+    as_(nh_,name,false),
     faces_(0),
     quit_(false)
   {
     ROS_INFO_STREAM_NAMED("face_detector","Constructing FaceDetector.");
-    
-    if (do_display_ == "local") {
-      // OpenCV: pop up an OpenCV highgui window
-      cv::namedWindow("Face detector: Face Detection", CV_WINDOW_AUTOSIZE);
-    }
-
 
     // Action stuff
     as_.registerGoalCallback(boost::bind(&FaceDetector::goalCB, this));
@@ -173,9 +167,9 @@ public:
     local_nh.param("classifier_reliability",reliability_,0.0);
     local_nh.param("do_display",do_display_,std::string("local"));
     local_nh.param("do_continuous",do_continuous_,true);
-    local_nh.param("do_publish_faces_of_unknown_size",do_publish_unknown_,false);
+    local_nh.param("do_publish_faces_of_unknown_size",do_publish_unknown_,true);
     local_nh.param("use_depth",use_depth_,true);
-    local_nh.param("use_external_init",external_init_,true);
+    local_nh.param("use_external_init",external_init_,false);
     local_nh.param("face_size_min_m",face_size_min_m,Faces::FACE_SIZE_MIN_M);
     local_nh.param("face_size_max_m",face_size_max_m,Faces::FACE_SIZE_MAX_M);
     local_nh.param("max_face_z_m",max_face_z_m,Faces::MAX_FACE_Z_M);
@@ -195,13 +189,19 @@ public:
     dimage_sub_.subscribe(nh_,disparity_topic,3);
     lcinfo_sub_.subscribe(nh_,left_camera_info_topic,3);
     rcinfo_sub_.subscribe(nh_,right_camera_info_topic,3);
-    sync_.connectInput(limage_sub_, dimage_sub_, lcinfo_sub_, rcinfo_sub_),
+    sync_.connectInput(limage_sub_, dimage_sub_, lcinfo_sub_, rcinfo_sub_);
     sync_.registerCallback(boost::bind(&FaceDetector::imageCBAll, this, _1, _2, _3, _4));
 
     // Advertise a position measure message.
     pos_pub_ = nh_.advertise<people_msgs::PositionMeasurement>("face_detector/people_tracker_measurements",1);
 
     cloud_pub_ = nh_.advertise<sensor_msgs::PointCloud>("face_detector/faces_cloud",0);
+
+    if (do_display_ == "local") {
+      // OpenCV: pop up an OpenCV highgui window
+      cv::namedWindow("Face detector: Face Detection", CV_WINDOW_AUTOSIZE);
+      printf(" sssssssssssssssssssss %s \n", do_display_.c_str() );
+    }
 
     // Subscribe to filter measurements.
     if (external_init_) {
@@ -280,7 +280,7 @@ public:
    */
   void imageCBAll(const sensor_msgs::Image::ConstPtr &limage, const stereo_msgs::DisparityImage::ConstPtr& dimage, const sensor_msgs::CameraInfo::ConstPtr& lcinfo, const sensor_msgs::CameraInfo::ConstPtr& rcinfo)
   {
-
+    printf(" sssssssssssssssssssss %s \n", do_display_.c_str() );
     // Only run the detector if in continuous mode or the detector was turned on through an action invocation.
     if (!do_continuous_ && !as_.isActive())
       return;
@@ -468,7 +468,7 @@ public:
     if (do_display_ == "local") {
 
       cv::imshow("Face detector: Face Detection",cv_image_out_);
-      cv::waitKey(20);
+      cv::waitKey(2);
  
       cv_mutex_.unlock();
     }
