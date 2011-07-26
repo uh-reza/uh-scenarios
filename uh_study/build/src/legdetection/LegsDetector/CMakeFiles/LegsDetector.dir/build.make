@@ -51,8 +51,8 @@ src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: ../src
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: ../manifest.xml
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/tools/rospack/manifest.xml
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/core/roslib/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/core/roslang/manifest.xml
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/manifest.xml
@@ -91,8 +91,8 @@ src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/r
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/geometry/tf/manifest.xml
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/geometry/eigen/manifest.xml
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/laser_pipeline/laser_geometry/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/srv_gen/generated

@@ -52,8 +52,8 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/uh_study/msg/__init__.py
 ../src/uh_study/msg/_Num.py: ../manifest.xml
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/ros/tools/rospack/manifest.xml
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/ros/core/roslib/manifest.xml
-../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/manifest.xml
+../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/ros/core/roslang/manifest.xml
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/manifest.xml
@@ -92,8 +92,8 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/uh_study/msg/__init__.py
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/geometry/tf/manifest.xml
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/geometry/eigen/manifest.xml
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/laser_pipeline/laser_geometry/manifest.xml
-../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
 ../src/uh_study/msg/_Num.py: /opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/srv_gen/generated

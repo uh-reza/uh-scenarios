@@ -49,8 +49,8 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Num.lisp
 ../msg_gen/lisp/Num.lisp: ../manifest.xml
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/ros/tools/rospack/manifest.xml
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/ros/core/roslib/manifest.xml
-../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/manifest.xml
+../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/ros/core/roslang/manifest.xml
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/manifest.xml
@@ -89,8 +89,8 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_Num.lisp
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/geometry/tf/manifest.xml
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/geometry/eigen/manifest.xml
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/laser_pipeline/laser_geometry/manifest.xml
-../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
 ../msg_gen/lisp/Num.lisp: /opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/srv_gen/generated
