@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "../src/face_detector/msg"
   "../msg_gen"
+  "../src/face_detector/msg"
   "../msg_gen"
   "CMakeFiles/ROSBUILD_genmsg_py"
   "../src/face_detector/msg/__init__.py"

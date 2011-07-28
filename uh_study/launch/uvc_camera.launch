@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
   <node ns="stereo/left" pkg="uvc_camera" type="camera_node" name="uvc_camera" output="screen">
     <param name="width" type="int" value="640" />

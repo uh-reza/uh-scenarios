@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "../src/people_msgs/msg"
   "../msg_gen"
+  "../src/people_msgs/msg"
   "../msg_gen"
   "CMakeFiles/ROSBUILD_genmsg_cpp"
   "../msg_gen/cpp/include/people_msgs/PositionMeasurement.h"

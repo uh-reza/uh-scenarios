@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "../src/face_detector/msg"
   "../msg_gen"
+  "../src/face_detector/msg"
   "../msg_gen"
   "CMakeFiles/ROSBUILD_genaction_msgs"
   "../msg/FaceDetectorAction.msg"

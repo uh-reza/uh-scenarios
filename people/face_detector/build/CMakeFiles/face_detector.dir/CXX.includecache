@@ -236,6 +236,12 @@ actionlib/server/simple_action_server.h
 face_detector/FaceDetectorAction.h
 -
 
+/home/reza/git/uh-scenarios/people/face_detector/src/faces.cpp
+face_detector/faces.h
+/home/reza/git/uh-scenarios/people/face_detector/src/face_detector/faces.h
+cfloat
+-
+
 /home/reza/git/uh-scenarios/people/people_msgs/msg_gen/cpp/include/people_msgs/PositionMeasurement.h
 string
 -
