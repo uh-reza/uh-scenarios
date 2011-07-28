@@ -1,7 +1,7 @@
 Background\ ColorR=0
 Background\ ColorG=0
 Background\ ColorB=0
-Fixed\ Frame=/world
+Fixed\ Frame=/ar_marker
 Target\ Frame=<Fixed Frame>
 Camera.Alpha=0.5
 Camera.Enabled=1
