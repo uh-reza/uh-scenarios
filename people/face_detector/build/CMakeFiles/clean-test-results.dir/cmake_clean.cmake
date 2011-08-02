@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "../msg_gen"
   "../src/face_detector/msg"
+  "../msg_gen"
   "../msg_gen"
   "CMakeFiles/clean-test-results"
 )

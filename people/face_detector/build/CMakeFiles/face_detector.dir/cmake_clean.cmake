@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "../msg_gen"
   "../src/face_detector/msg"
+  "../msg_gen"
   "../msg_gen"
   "CMakeFiles/face_detector.dir/src/face_detection.o"
   "CMakeFiles/face_detector.dir/src/faces.o"

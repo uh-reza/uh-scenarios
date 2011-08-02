@@ -49,15 +49,15 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/face_detector/msg/__init__.py
 ../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorFeedback.py
 ../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionFeedback.py
 ../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionFeedback.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorFeedback.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionResult.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorResult.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorGoal.py
-../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionGoal.py
 ../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorAction.py
+../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorFeedback.py
+../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionGoal.py
+../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorActionResult.py
+../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorGoal.py
+../src/face_detector/msg/__init__.py: ../src/face_detector/msg/_FaceDetectorResult.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/people/face_detector/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/face_detector/msg/__init__.py"
-	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --initpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorAction.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorAction.msg
+	/opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --initpy /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorAction.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorAction.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorFeedback.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorActionResult.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorGoal.msg /home/reza/git/uh-scenarios/people/face_detector/msg/FaceDetectorResult.msg
 
 ../src/face_detector/msg/_FaceDetectorAction.py: ../msg/FaceDetectorAction.msg
 ../src/face_detector/msg/_FaceDetectorAction.py: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py

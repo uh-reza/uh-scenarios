@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
   <node pkg="face_detector" type="face_detector" name="face_detector_action" args="stereo:=wide_stereo image:=image_rect" output="screen">
   	 <param name="classifier_name" type="string" value="frontalface" />

@@ -1,4 +1,6 @@
+<?xml version="1.0"?>
 <launch>
+
   <node ns="narrow_stereo" pkg="stereo_image_proc" type="stereo_image_proc" args="" output="screen" name="stereoproc"/>
 
   <node pkg="face_detector" type="face_detector" name="face_detector" args="stereo:=narrow_stereo image:=image_rect" output="screen">
