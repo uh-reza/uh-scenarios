@@ -40,7 +40,7 @@ CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/uh_bringup/build
 # Utility rule file for test-results.
 
 CMakeFiles/test-results:
-	/opt/ros/diamondback/ros/tools/rosunit/scripts/summarize_results.py --nodeps uh_bringup
+	/opt/ros/electric/ros/tools/rosunit/scripts/summarize_results.py --nodeps uh_bringup
 
 test-results: CMakeFiles/test-results
 test-results: CMakeFiles/test-results.dir/build.make

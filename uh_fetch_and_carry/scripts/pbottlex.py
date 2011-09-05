@@ -221,8 +221,8 @@ class FetchAndCarry(script):
 		self.sss.set_light("yellow")
 		self.sss.sleep(.5)
 
-		self.sss.move("tray","down",False)
 		handle_base = self.sss.move("base","park",False)
+		self.sss.move("tray","down",False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()
 

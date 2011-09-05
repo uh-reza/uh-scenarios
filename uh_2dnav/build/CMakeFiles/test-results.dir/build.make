@@ -40,7 +40,7 @@ CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/uh_2dnav/build
 # Utility rule file for test-results.
 
 CMakeFiles/test-results:
-	/opt/ros/diamondback/ros/tools/rosunit/scripts/summarize_results.py --nodeps uh_2dnav
+	/opt/ros/electric/ros/tools/rosunit/scripts/summarize_results.py --nodeps uh_2dnav
 
 test-results: CMakeFiles/test-results
 test-results: CMakeFiles/test-results.dir/build.make

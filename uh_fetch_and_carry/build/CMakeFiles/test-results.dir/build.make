@@ -40,7 +40,7 @@ CMAKE_BINARY_DIR = /home/reza/git/uh-scenarios/uh_fetch_and_carry/build
 # Utility rule file for test-results.
 
 CMakeFiles/test-results:
-	/opt/ros/diamondback/ros/tools/rosunit/scripts/summarize_results.py --nodeps uh_fetch_and_carry
+	/opt/ros/electric/ros/tools/rosunit/scripts/summarize_results.py --nodeps uh_fetch_and_carry
 
 test-results: CMakeFiles/test-results
 test-results: CMakeFiles/test-results.dir/build.make

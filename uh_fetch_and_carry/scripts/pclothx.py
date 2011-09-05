@@ -205,9 +205,9 @@ class FetchAndCarry(script):
 
 		# move base   
 		tv = rospy.get_param("/script_server/base/tv")
-		tv[0] = tv[0] - 0.9 
-		tv[1] = tv[1] - 0.3
-		tv[2] = 4*3.1415926/4
+		tv[0] = tv[0] - 1.0 
+		tv[1] = tv[1] - 0.2
+		tv[2] = 2*3.1415926/4
 		handle_base = self.sss.move("base",tv,False)
 		self.blink(handle_base,"yellow")
 		handle_base.wait()
@@ -224,6 +224,15 @@ class FetchAndCarry(script):
 		# express behaviour  
 		self.sss.set_light("yellow")
 		self.sss.sleep(.5)
+
+		# move base   
+		tv = rospy.get_param("/script_server/base/tv")
+		tv[0] = tv[0] - 1.0 
+		tv[1] = tv[1] - 0.2
+		tv[2] = 4*3.1415926/4
+		handle_base = self.sss.move("base",tv,False)
+		self.blink(handle_base,"yellow")
+		handle_base.wait()
 
 		# move base   
 		handle_base = self.sss.move("base","park",False)
