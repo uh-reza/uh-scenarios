@@ -27,6 +27,7 @@ class FetchAndCarry(script):
 		self.sss.recover("tray")
 		self.sss.recover("torso")
 		self.sss.recover("arm")
+		self.sss.init("sdh")
 		self.sss.recover("base")
 
 		# set default configurations
@@ -102,6 +103,7 @@ class FetchAndCarry(script):
 		self.sss.set_light("red")
 		self.sss.sleep(.5)
 
+		self.sss.init("sdh")
 		handle_sdh = self.sss.move("sdh","cylopen")
 
 		# caculate tranformations, we need cup coordinates in arm_7_link coordinate system
@@ -126,8 +128,10 @@ class FetchAndCarry(script):
 		self.sss.move_cart_rel("arm",[[0.0, 0.0, -pregrasp_distance], [0, 0, 0]])
 
 		# grasp cup
+		self.sss.init("sdh")
 		self.sss.move("sdh","cylclosed")
-
+		self.sss.sleep(1)
+		
 		# lift cup
 		self.sss.move_cart_rel("arm",[[0.0, 0.1, 0.0], [0, 0, 0]])
 
@@ -145,6 +149,7 @@ class FetchAndCarry(script):
 		self.sss.move_cart_rel("arm",[[0.0, 0.0, -0.02], [0, 0, 0]])
 		self.sss.sleep(.5)
 
+		self.sss.init("sdh")
 		self.sss.move("sdh","cylopen")
 		self.sss.sleep(1)
 
@@ -152,6 +157,7 @@ class FetchAndCarry(script):
 
 		handle01 = self.sss.move("arm","tray-to-folded",False)
 		self.sss.sleep(2)
+		self.sss.init("sdh")
 		self.sss.move("sdh","cylclosed",False)
 		self.blink(handle01,"red")
 		handle01.wait()

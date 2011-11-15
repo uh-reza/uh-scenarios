@@ -1,0 +1,35 @@
+image_width: 1360
+image_height: 1024
+width: 640
+height: 480
+x_offset: 300
+y_offset: 300
+camera_name: right
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [1053.168916, 0.000000, 431.706035, 0.000000, 1055.959897, 241.201656, 0.000000, 0.000000, 1.000000]
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.180408, -0.901440, 0.001898, -0.000025, 5.168338]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [0.425082, -0.151317, 0.892417, 0.162062, 0.982719, 0.089434, -0.890529, 0.106611, 0.442259]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [2213.586023, 0.000000, -2022.460999, 922.452815, 0.000000, 2213.586023, 31.000851, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000]
+auto_exposure:     True
+exposure_auto_max: 50000
+exposure_auto_target: 50
+exposure:          0.05
+auto_gain:         True
+gain:              15
+auto_whitebalance: True
+frame_id: head_color_camera_r_link
+stream_bytes_per_second: 56000000
+auto_adjust_stream_bytes_per_second: False
+trigger_mode: syncin1
+packet_size: 1500

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-  <node pkg="camera_calibration" type="cameracalibrator.py" name="cameracalibrator" respawn="false" args="--size 8x6 --square 0.108  --approximate=0.05  right:=/stereo/right/image_raw left:=/stereo/left/image_raw left_camera:=/stereo/left right_camera:=/stereo/right" output="screen"/>
+  <node pkg="camera_calibration" type="cameracalibrator.py" name="cameracalibrator" respawn="false" args="--approximate=0.009 --size 8x6 --square 0.108  right:=/stereo/right/image_raw left:=/stereo/left/image_raw left_camera:=/stereo/left/camera right_camera:=/stereo/right/camera _approximate_sync:=True _queue_size:=10" output="screen"/>
 
 
 </launch>

@@ -35,6 +35,7 @@ class FetchAndCarry(script):
 		# move to initial positions
 		handle_arm = self.sss.move("arm","folded",False)
 		handle_torso = self.sss.move("torso","home",False)
+		self.sss.init("sdh")
 		handle_sdh = self.sss.move("sdh","home",False)
 		handle_tray = self.sss.move("tray","down")
 		handle_arm.wait()
@@ -103,6 +104,7 @@ class FetchAndCarry(script):
 		self.blink(handle_arm,"red")
 		handle_arm.wait()
 		
+		self.sss.init("sdh")
 		self.sss.move("sdh","cylopen")
 		self.sss.sleep(.5)
 
@@ -114,6 +116,7 @@ class FetchAndCarry(script):
 		self.sss.set_light("red")
 		self.sss.sleep(.5)
 
+		self.sss.init("sdh")
 		self.sss.move("sdh","cylclosed")
 		self.sss.sleep(.5)
 
@@ -164,8 +167,10 @@ class FetchAndCarry(script):
 				self.sss.sleep(.5)
 				sys.exit("aborting ...")
 			elif choice == "5": 
+				self.sss.init("sdh")
 				self.sss.move("sdh","cylopen")
 				self.sss.sleep(.5)
+				self.sss.init("sdh")
 				self.sss.move("sdh","cylclosed")
 				handle_arm = self.sss.move("arm","tray-to-folded",False)
 				self.blink(handle_arm,"red")
@@ -193,8 +198,10 @@ class FetchAndCarry(script):
 			print " Enter to continue ..."
 		self.sss.wait_for_input()
 
+		self.sss.init("sdh")
 		self.sss.move("sdh","cylopen")
 		self.sss.sleep(.5)
+		self.sss.init("sdh")
 		self.sss.move("sdh","cylclosed")
 		self.sss.sleep(.5)
 

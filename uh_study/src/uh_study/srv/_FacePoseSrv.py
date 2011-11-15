@@ -110,12 +110,12 @@ string frame_id
       buff.write(_struct_2q3I.pack(_x.a, _x.b, _x.img_in.header.seq, _x.img_in.header.stamp.secs, _x.img_in.header.stamp.nsecs))
       _x = self.img_in.header.frame_id
       length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x))
+      buff.write(struct.pack('<I%ss'%length, length, _x.encode()))
       _x = self
       buff.write(_struct_2I.pack(_x.img_in.height, _x.img_in.width))
       _x = self.img_in.encoding
       length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x))
+      buff.write(struct.pack('<I%ss'%length, length, _x.encode()))
       _x = self
       buff.write(_struct_BI.pack(_x.img_in.is_bigendian, _x.img_in.step))
       _x = self.img_in.data
@@ -125,8 +125,8 @@ string frame_id
         buff.write(struct.pack('<I%sB'%length, length, *_x))
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
-    except struct.error, se: self._check_types(se)
-    except TypeError, te: self._check_types(te)
+    except struct.error as se: self._check_types(se)
+    except TypeError as te: self._check_types(te)
 
   def deserialize(self, str):
     """
@@ -169,7 +169,7 @@ string frame_id
       end += length
       self.img_in.data = str[start:end]
       return self
-    except struct.error, e:
+    except struct.error as e:
       raise roslib.message.DeserializationError(e) #most likely buffer underfill
 
 
@@ -186,12 +186,12 @@ string frame_id
       buff.write(_struct_2q3I.pack(_x.a, _x.b, _x.img_in.header.seq, _x.img_in.header.stamp.secs, _x.img_in.header.stamp.nsecs))
       _x = self.img_in.header.frame_id
       length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x))
+      buff.write(struct.pack('<I%ss'%length, length, _x.encode()))
       _x = self
       buff.write(_struct_2I.pack(_x.img_in.height, _x.img_in.width))
       _x = self.img_in.encoding
       length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x))
+      buff.write(struct.pack('<I%ss'%length, length, _x.encode()))
       _x = self
       buff.write(_struct_BI.pack(_x.img_in.is_bigendian, _x.img_in.step))
       _x = self.img_in.data
@@ -201,8 +201,8 @@ string frame_id
         buff.write(struct.pack('<I%sB'%length, length, *_x))
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
-    except struct.error, se: self._check_types(se)
-    except TypeError, te: self._check_types(te)
+    except struct.error as se: self._check_types(se)
+    except TypeError as te: self._check_types(te)
 
   def deserialize_numpy(self, str, numpy):
     """
@@ -247,7 +247,7 @@ string frame_id
       end += length
       self.img_in.data = str[start:end]
       return self
-    except struct.error, e:
+    except struct.error as e:
       raise roslib.message.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = roslib.message.struct_I
@@ -319,8 +319,8 @@ float64 z
     try:
       _x = self
       buff.write(_struct_q3d.pack(_x.sum, _x.x, _x.y, _x.z))
-    except struct.error, se: self._check_types(se)
-    except TypeError, te: self._check_types(te)
+    except struct.error as se: self._check_types(se)
+    except TypeError as te: self._check_types(te)
 
   def deserialize(self, str):
     """
@@ -335,7 +335,7 @@ float64 z
       end += 32
       (_x.sum, _x.x, _x.y, _x.z,) = _struct_q3d.unpack(str[start:end])
       return self
-    except struct.error, e:
+    except struct.error as e:
       raise roslib.message.DeserializationError(e) #most likely buffer underfill
 
 
@@ -350,8 +350,8 @@ float64 z
     try:
       _x = self
       buff.write(_struct_q3d.pack(_x.sum, _x.x, _x.y, _x.z))
-    except struct.error, se: self._check_types(se)
-    except TypeError, te: self._check_types(te)
+    except struct.error as se: self._check_types(se)
+    except TypeError as te: self._check_types(te)
 
   def deserialize_numpy(self, str, numpy):
     """
@@ -368,7 +368,7 @@ float64 z
       end += 32
       (_x.sum, _x.x, _x.y, _x.z,) = _struct_q3d.unpack(str[start:end])
       return self
-    except struct.error, e:
+    except struct.error as e:
       raise roslib.message.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = roslib.message.struct_I

@@ -54,8 +54,8 @@ int64 b
     try:
       _x = self
       buff.write(_struct_2q.pack(_x.a, _x.b))
-    except struct.error, se: self._check_types(se)
-    except TypeError, te: self._check_types(te)
+    except struct.error as se: self._check_types(se)
+    except TypeError as te: self._check_types(te)
 
   def deserialize(self, str):
     """
@@ -70,7 +70,7 @@ int64 b
       end += 16
       (_x.a, _x.b,) = _struct_2q.unpack(str[start:end])
       return self
-    except struct.error, e:
+    except struct.error as e:
       raise roslib.message.DeserializationError(e) #most likely buffer underfill
 
 
@@ -85,8 +85,8 @@ int64 b
     try:
       _x = self
       buff.write(_struct_2q.pack(_x.a, _x.b))
-    except struct.error, se: self._check_types(se)
-    except TypeError, te: self._check_types(te)
+    except struct.error as se: self._check_types(se)
+    except TypeError as te: self._check_types(te)
 
   def deserialize_numpy(self, str, numpy):
     """
@@ -103,7 +103,7 @@ int64 b
       end += 16
       (_x.a, _x.b,) = _struct_2q.unpack(str[start:end])
       return self
-    except struct.error, e:
+    except struct.error as e:
       raise roslib.message.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = roslib.message.struct_I
@@ -160,8 +160,8 @@ class AddTwoIntsResponse(roslib.message.Message):
     """
     try:
       buff.write(_struct_q.pack(self.sum))
-    except struct.error, se: self._check_types(se)
-    except TypeError, te: self._check_types(te)
+    except struct.error as se: self._check_types(se)
+    except TypeError as te: self._check_types(te)
 
   def deserialize(self, str):
     """
@@ -175,7 +175,7 @@ class AddTwoIntsResponse(roslib.message.Message):
       end += 8
       (self.sum,) = _struct_q.unpack(str[start:end])
       return self
-    except struct.error, e:
+    except struct.error as e:
       raise roslib.message.DeserializationError(e) #most likely buffer underfill
 
 
@@ -189,8 +189,8 @@ class AddTwoIntsResponse(roslib.message.Message):
     """
     try:
       buff.write(_struct_q.pack(self.sum))
-    except struct.error, se: self._check_types(se)
-    except TypeError, te: self._check_types(te)
+    except struct.error as se: self._check_types(se)
+    except TypeError as te: self._check_types(te)
 
   def deserialize_numpy(self, str, numpy):
     """
@@ -206,7 +206,7 @@ class AddTwoIntsResponse(roslib.message.Message):
       end += 8
       (self.sum,) = _struct_q.unpack(str[start:end])
       return self
-    except struct.error, e:
+    except struct.error as e:
       raise roslib.message.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = roslib.message.struct_I

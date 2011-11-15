@@ -3,12 +3,16 @@
 #define UH_STUDY_SERVICE_FACEPOSESRV_H
 #include <string>
 #include <vector>
+#include <map>
 #include <ostream>
 #include "ros/serialization.h"
 #include "ros/builtin_message_traits.h"
 #include "ros/message_operations.h"
-#include "ros/message.h"
 #include "ros/time.h"
+
+#include "ros/macros.h"
+
+#include "ros/assert.h"
 
 #include "ros/service_traits.h"
 
@@ -19,8 +23,7 @@
 namespace uh_study
 {
 template <class ContainerAllocator>
-struct FacePoseSrvRequest_ : public ros::Message
-{
+struct FacePoseSrvRequest_ {
   typedef FacePoseSrvRequest_<ContainerAllocator> Type;
 
   FacePoseSrvRequest_()
@@ -156,6 +159,7 @@ public:
 
   typedef boost::shared_ptr< ::uh_study::FacePoseSrvRequest_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::uh_study::FacePoseSrvRequest_<ContainerAllocator>  const> ConstPtr;
+  boost::shared_ptr<std::map<std::string, std::string> > __connection_header;
 }; // struct FacePoseSrvRequest
 typedef  ::uh_study::FacePoseSrvRequest_<std::allocator<void> > FacePoseSrvRequest;
 
@@ -164,8 +168,7 @@ typedef boost::shared_ptr< ::uh_study::FacePoseSrvRequest const> FacePoseSrvRequ
 
 
 template <class ContainerAllocator>
-struct FacePoseSrvResponse_ : public ros::Message
-{
+struct FacePoseSrvResponse_ {
   typedef FacePoseSrvResponse_<ContainerAllocator> Type;
 
   FacePoseSrvResponse_()
@@ -263,6 +266,7 @@ public:
 
   typedef boost::shared_ptr< ::uh_study::FacePoseSrvResponse_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::uh_study::FacePoseSrvResponse_<ContainerAllocator>  const> ConstPtr;
+  boost::shared_ptr<std::map<std::string, std::string> > __connection_header;
 }; // struct FacePoseSrvResponse
 typedef  ::uh_study::FacePoseSrvResponse_<std::allocator<void> > FacePoseSrvResponse;
 
@@ -286,6 +290,8 @@ namespace ros
 {
 namespace message_traits
 {
+template<class ContainerAllocator> struct IsMessage< ::uh_study::FacePoseSrvRequest_<ContainerAllocator> > : public TrueType {};
+template<class ContainerAllocator> struct IsMessage< ::uh_study::FacePoseSrvRequest_<ContainerAllocator>  const> : public TrueType {};
 template<class ContainerAllocator>
 struct MD5Sum< ::uh_study::FacePoseSrvRequest_<ContainerAllocator> > {
   static const char* value() 
@@ -378,6 +384,8 @@ namespace ros
 {
 namespace message_traits
 {
+template<class ContainerAllocator> struct IsMessage< ::uh_study::FacePoseSrvResponse_<ContainerAllocator> > : public TrueType {};
+template<class ContainerAllocator> struct IsMessage< ::uh_study::FacePoseSrvResponse_<ContainerAllocator>  const> : public TrueType {};
 template<class ContainerAllocator>
 struct MD5Sum< ::uh_study::FacePoseSrvResponse_<ContainerAllocator> > {
   static const char* value() 

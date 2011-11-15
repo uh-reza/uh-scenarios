@@ -3,12 +3,16 @@
 #define UH_STUDY_SERVICE_ADDTWOINTS_H
 #include <string>
 #include <vector>
+#include <map>
 #include <ostream>
 #include "ros/serialization.h"
 #include "ros/builtin_message_traits.h"
 #include "ros/message_operations.h"
-#include "ros/message.h"
 #include "ros/time.h"
+
+#include "ros/macros.h"
+
+#include "ros/assert.h"
 
 #include "ros/service_traits.h"
 
@@ -18,8 +22,7 @@
 namespace uh_study
 {
 template <class ContainerAllocator>
-struct AddTwoIntsRequest_ : public ros::Message
-{
+struct AddTwoIntsRequest_ {
   typedef AddTwoIntsRequest_<ContainerAllocator> Type;
 
   AddTwoIntsRequest_()
@@ -98,6 +101,7 @@ public:
 
   typedef boost::shared_ptr< ::uh_study::AddTwoIntsRequest_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::uh_study::AddTwoIntsRequest_<ContainerAllocator>  const> ConstPtr;
+  boost::shared_ptr<std::map<std::string, std::string> > __connection_header;
 }; // struct AddTwoIntsRequest
 typedef  ::uh_study::AddTwoIntsRequest_<std::allocator<void> > AddTwoIntsRequest;
 
@@ -106,8 +110,7 @@ typedef boost::shared_ptr< ::uh_study::AddTwoIntsRequest const> AddTwoIntsReques
 
 
 template <class ContainerAllocator>
-struct AddTwoIntsResponse_ : public ros::Message
-{
+struct AddTwoIntsResponse_ {
   typedef AddTwoIntsResponse_<ContainerAllocator> Type;
 
   AddTwoIntsResponse_()
@@ -178,6 +181,7 @@ public:
 
   typedef boost::shared_ptr< ::uh_study::AddTwoIntsResponse_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::uh_study::AddTwoIntsResponse_<ContainerAllocator>  const> ConstPtr;
+  boost::shared_ptr<std::map<std::string, std::string> > __connection_header;
 }; // struct AddTwoIntsResponse
 typedef  ::uh_study::AddTwoIntsResponse_<std::allocator<void> > AddTwoIntsResponse;
 
@@ -201,6 +205,8 @@ namespace ros
 {
 namespace message_traits
 {
+template<class ContainerAllocator> struct IsMessage< ::uh_study::AddTwoIntsRequest_<ContainerAllocator> > : public TrueType {};
+template<class ContainerAllocator> struct IsMessage< ::uh_study::AddTwoIntsRequest_<ContainerAllocator>  const> : public TrueType {};
 template<class ContainerAllocator>
 struct MD5Sum< ::uh_study::AddTwoIntsRequest_<ContainerAllocator> > {
   static const char* value() 
@@ -245,6 +251,8 @@ namespace ros
 {
 namespace message_traits
 {
+template<class ContainerAllocator> struct IsMessage< ::uh_study::AddTwoIntsResponse_<ContainerAllocator> > : public TrueType {};
+template<class ContainerAllocator> struct IsMessage< ::uh_study::AddTwoIntsResponse_<ContainerAllocator>  const> : public TrueType {};
 template<class ContainerAllocator>
 struct MD5Sum< ::uh_study::AddTwoIntsResponse_<ContainerAllocator> > {
   static const char* value() 

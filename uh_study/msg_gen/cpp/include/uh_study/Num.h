@@ -3,19 +3,22 @@
 #define UH_STUDY_MESSAGE_NUM_H
 #include <string>
 #include <vector>
+#include <map>
 #include <ostream>
 #include "ros/serialization.h"
 #include "ros/builtin_message_traits.h"
 #include "ros/message_operations.h"
-#include "ros/message.h"
 #include "ros/time.h"
+
+#include "ros/macros.h"
+
+#include "ros/assert.h"
 
 
 namespace uh_study
 {
 template <class ContainerAllocator>
-struct Num_ : public ros::Message
-{
+struct Num_ {
   typedef Num_<ContainerAllocator> Type;
 
   Num_()
@@ -78,6 +81,7 @@ public:
 
   typedef boost::shared_ptr< ::uh_study::Num_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::uh_study::Num_<ContainerAllocator>  const> ConstPtr;
+  boost::shared_ptr<std::map<std::string, std::string> > __connection_header;
 }; // struct Num
 typedef  ::uh_study::Num_<std::allocator<void> > Num;
 
@@ -97,6 +101,8 @@ namespace ros
 {
 namespace message_traits
 {
+template<class ContainerAllocator> struct IsMessage< ::uh_study::Num_<ContainerAllocator> > : public TrueType {};
+template<class ContainerAllocator> struct IsMessage< ::uh_study::Num_<ContainerAllocator>  const> : public TrueType {};
 template<class ContainerAllocator>
 struct MD5Sum< ::uh_study::Num_<ContainerAllocator> > {
   static const char* value() 

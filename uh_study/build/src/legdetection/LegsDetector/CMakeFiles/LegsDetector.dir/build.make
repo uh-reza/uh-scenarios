@@ -49,69 +49,69 @@ include src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/flags.make
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/flags.make
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: ../src/legdetection/LegsDetector/LegsDetector.cpp
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: ../manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/tools/rospack/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/core/roslib/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/core/rosbuild/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/core/roslang/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/rospy/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/utilities/cpp_common/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/utilities/rostime/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/vision_opencv/opencv2/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/tools/rosclean/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosgraph/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosmaster/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosout/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/roslaunch/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/ros/tools/rosunit/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rostest/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosbag/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/vision_opencv/cv_bridge/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/common/tinyxml/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/common/pluginlib/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/utilities/message_filters/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/image_common/image_transport/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/geometry/bullet/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/geometry/angles/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosnode/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosmsg/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rostopic/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/rosservice/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/utilities/roswtf/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/geometry/tf/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/geometry/eigen/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/laser_pipeline/laser_geometry/manifest.xml
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/msg_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/common_msgs/sensor_msgs/srv_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/geometry/tf/msg_gen/generated
-src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/diamondback/stacks/geometry/tf/srv_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/ros/tools/rospack/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/ros/core/roslib/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/ros/core/rosbuild/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/ros/core/roslang/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/vision_opencv/opencv2/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/ros/tools/rosclean/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/ros/tools/rosunit/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/vision_opencv/cv_bridge/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/pluginlib/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/image_common/image_transport/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/bullet/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/geometry/angles/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/geometry/tf/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/eigen/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/laser_pipeline/laser_geometry/manifest.xml
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
+src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/reza/git/uh-scenarios/uh_study/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o"
-	cd /home/reza/git/uh-scenarios/uh_study/build/src/legdetection/LegsDetector && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DEIGEN_USE_NEW_STDVECTOR -DEIGEN2_SUPPORT -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/LegsDetector.dir/LegsDetector.o -c /home/reza/git/uh-scenarios/uh_study/src/legdetection/LegsDetector/LegsDetector.cpp
+	cd /home/reza/git/uh-scenarios/uh_study/build/src/legdetection/LegsDetector && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/LegsDetector.dir/LegsDetector.o -c /home/reza/git/uh-scenarios/uh_study/src/legdetection/LegsDetector/LegsDetector.cpp
 
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LegsDetector.dir/LegsDetector.i"
-	cd /home/reza/git/uh-scenarios/uh_study/build/src/legdetection/LegsDetector && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DEIGEN_USE_NEW_STDVECTOR -DEIGEN2_SUPPORT -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/reza/git/uh-scenarios/uh_study/src/legdetection/LegsDetector/LegsDetector.cpp > CMakeFiles/LegsDetector.dir/LegsDetector.i
+	cd /home/reza/git/uh-scenarios/uh_study/build/src/legdetection/LegsDetector && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/reza/git/uh-scenarios/uh_study/src/legdetection/LegsDetector/LegsDetector.cpp > CMakeFiles/LegsDetector.dir/LegsDetector.i
 
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LegsDetector.dir/LegsDetector.s"
-	cd /home/reza/git/uh-scenarios/uh_study/build/src/legdetection/LegsDetector && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DTIXML_USE_STL -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -DEIGEN_USE_NEW_STDVECTOR -DEIGEN2_SUPPORT -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/reza/git/uh-scenarios/uh_study/src/legdetection/LegsDetector/LegsDetector.cpp -o CMakeFiles/LegsDetector.dir/LegsDetector.s
+	cd /home/reza/git/uh-scenarios/uh_study/build/src/legdetection/LegsDetector && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/reza/git/uh-scenarios/uh_study/src/legdetection/LegsDetector/LegsDetector.cpp -o CMakeFiles/LegsDetector.dir/LegsDetector.s
 
 src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o.requires:
 .PHONY : src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o.requires
@@ -131,6 +131,17 @@ LegsDetector_OBJECTS = \
 LegsDetector_EXTERNAL_OBJECTS =
 
 ../lib/libLegsDetector.so: src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/LegsDetector.o
+../lib/libLegsDetector.so: /usr/lib/libopencv_contrib.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_legacy.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_objdetect.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_calib3d.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_features2d.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_video.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_highgui.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_ml.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_imgproc.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_flann.so.2.3.1
+../lib/libLegsDetector.so: /usr/lib/libopencv_core.so.2.3.1
 ../lib/libLegsDetector.so: src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/build.make
 ../lib/libLegsDetector.so: src/legdetection/LegsDetector/CMakeFiles/LegsDetector.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../../lib/libLegsDetector.so"
